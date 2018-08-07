@@ -29,11 +29,13 @@ public class Health : MonoBehaviour
     bool our_damage;
     bool our_manause;
     bool our_death;
+    bool outofmana;
 
-    [Header("Animator Reference")]
+    [Header("Other things")]
     Animator m_anim;                                                // Animator component
     AudioSource m_audio;                                            // Audio component
     public AudioClip ourdeathclip;                                  // Our death sound
+    public AudioClip ourmanafail;                                   // Failed mana sound
     // Playermovement m_playermovement;                             // Reference to the movement
 
 
@@ -77,6 +79,18 @@ public class Health : MonoBehaviour
         }
     }
 
+    public void Manause(int mana_amount)
+    {
+        our_manause = true;
+        our_currentmana -= mana_amount;
+        ourmanaslider.value = our_currentmana;
+        if(our_currentmana <= 0 && !outofmana)
+        {
+            Fail();
+        }
+    }
+
+
     void Death()
     {
         our_death = true;
@@ -85,5 +99,13 @@ public class Health : MonoBehaviour
         m_audio.Play();
 
         //m_playermovement.enabled = false
+    }
+
+    void Fail()
+    {
+        our_manause = true;
+        m_anim.SetTrigger("Fail");
+        m_audio.clip = ourmanafail;
+        m_audio.Play();
     }
 }

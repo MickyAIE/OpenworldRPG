@@ -16,11 +16,11 @@ public class EnemyHealth : MonoBehaviour
     public int m_fallspeed = 2;              // The speed in which the enemy disappears when death occurs
     public AudioClip m_damagesound;          // Soundclip on damage
     public AudioClip m_deathclip;            // Soundclip on death
-    public int m_exp = 1;                    // set this value in the inspector
+    public int m_enemyexpgiven = 1;                    // experience of the enemy
     public Slider m_enemyslider;             // enemy health slider (to be fixed)
 
 
-    [Header("Animator reference")]
+    [Header("Other things")]
     Animator m_anim;                         // Animator
     AudioSource m_enemysounds;               // Sound of enemy when hit
     AudioSource m_soundenemy;                // Sound of enemy when death
@@ -40,6 +40,7 @@ public class EnemyHealth : MonoBehaviour
         m_soundenemy = GetComponent<AudioSource>();
         m_particle = GetComponentInChildren<ParticleSystem>();
         m_capsule = GetComponent<CapsuleCollider>();
+        
 
         m_currenthealth = m_health;
     }
@@ -77,7 +78,6 @@ public class EnemyHealth : MonoBehaviour
         m_anim.SetTrigger("Dead");
         m_soundenemy.clip = m_deathclip;
         m_soundenemy.Play();
-        m_exp 
     }
 
     public void m_actualfalling()
@@ -85,6 +85,7 @@ public class EnemyHealth : MonoBehaviour
         GetComponent<NavMeshAgent>().enabled = false;
         GetComponent<Rigidbody>().isKinematic = true;
         m_falling = true;
+        Experience.m_exp += m_enemyexpgiven;
         Destroy(gameObject, 5f);
     }
 
