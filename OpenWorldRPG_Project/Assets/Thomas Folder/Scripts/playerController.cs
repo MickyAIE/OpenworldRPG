@@ -7,14 +7,20 @@ public class playerController : MonoBehaviour {
     public float StartSpeed = 10f;
     public float speed;
     public float Rspeed = 13f;
+    public float jumpForce;
     public bool running = false;
+    public Rigidbody rigd;
     private Animator playeranim;
+    private bool isJumping;
 
 	void Start () {
         Cursor.lockState = CursorLockMode.Locked;
         playeranim = GetComponent<Animator>();
         running = false;
         speed = StartSpeed;
+        rigd = GetComponent<Rigidbody>();
+        isJumping = false;
+        
 	}
 	
 	void Update () {
@@ -88,11 +94,19 @@ public class playerController : MonoBehaviour {
             playeranim.SetBool("isWalking", false);
         }
 
+        if (Input.GetButtonDown("Jump") && isJumping == false)
+        {
+            rigd.AddForce(0, jumpForce, 0, ForceMode.Impulse);
+            isJumping = true;
+        }
 
+    }
 
-
-
-
-
+    private void OnCollisionEnter(Collision other)
+    {
+        if(other.gameObject.name == "floor")
+        {
+            isJumping = false;
+        }
     }
 }
