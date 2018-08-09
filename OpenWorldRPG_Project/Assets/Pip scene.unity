@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657642, g: 0.49641156, b: 0.5748181, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -680,7 +680,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -70, y: -0.000012159}
+  m_AnchoredPosition: {x: -70, y: -0.000012397766}
   m_SizeDelta: {x: 160, y: 36.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &431000459
@@ -1285,6 +1285,7 @@ MonoBehaviour:
   our_damageimage: {fileID: 667392525}
   our_damagecolour: {r: 1, g: 0, b: 0, a: 0.1}
   ourdeathclip: {fileID: 0}
+  ourmanafail: {fileID: 0}
 --- !u!114 &1124527998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1356,13 +1357,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1370450271}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: 0.42261827, y: 0, z: 0, w: 0.9063079}
+  m_LocalPosition: {x: 0, y: 20.63, z: -14.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 50, y: 0, z: 0}
 --- !u!1 &1948441507
 GameObject:
   m_ObjectHideFlags: 0
@@ -1395,6 +1396,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_health: 1
   m_currenthealth: 0
+  m_healthbar: 0
   m_fallspeed: 2
   m_damagesound: {fileID: 0}
   m_deathclip: {fileID: 0}
