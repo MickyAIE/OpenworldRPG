@@ -39,22 +39,22 @@ public class playerController : MonoBehaviour {
         {
             if (straffe != 0)
             {
-                playeranim.SetBool("isWalking", false);
-                playeranim.SetBool("isIdle", false);
-                playeranim.SetBool("isRunning", true);
+                playeranim.SetBool("IsWalking", false);
+                playeranim.SetBool("IsIdle", false);
+                playeranim.SetBool("IsRunning", true);
             }
             else
             {
-                playeranim.SetBool("isIdle", true);
-                playeranim.SetBool("isWalking", false);
-                playeranim.SetBool("isRunning", false);
+                playeranim.SetBool("IsIdle", true);
+                playeranim.SetBool("IsWalking", false);
+                playeranim.SetBool("IsRunning", false);
             }
 
             if (translation != 0)
             {
-                playeranim.SetBool("isWalking", false);
-                playeranim.SetBool("isIdle", false);
-                playeranim.SetBool("isRunning", true);
+                playeranim.SetBool("IsWalking", false);
+                playeranim.SetBool("IsIdle", false);
+                playeranim.SetBool("IsRunning", true);
             }
             running = true;
             speed = Rspeed;
@@ -70,34 +70,42 @@ public class playerController : MonoBehaviour {
         {
             if (straffe != 0)
             {
-                playeranim.SetBool("isWalking", true);
-                playeranim.SetBool("isIdle", false);
-                playeranim.SetBool("isRunning", false);
+                playeranim.SetBool("IsWalking", true);
+                playeranim.SetBool("IsIdle", false);
+                playeranim.SetBool("IsRunning", false);
+                playeranim.SetBool("IsJumping", false);
             }
             else
             {
-                playeranim.SetBool("isIdle", true);
-                playeranim.SetBool("isWalking", false);
-                playeranim.SetBool("isRunning", false);
+                playeranim.SetBool("IsIdle", true);
+                playeranim.SetBool("IsWalking", false);
+                playeranim.SetBool("IsRunning", false);
+                playeranim.SetBool("IsJumping", false);
             }
 
             if (translation != 0)
             {
-                playeranim.SetBool("isWalking", true);
-                playeranim.SetBool("isIdle", false);
-                playeranim.SetBool("isRunning", false);
+                playeranim.SetBool("IsWalking", true);
+                playeranim.SetBool("IsIdle", false);
+                playeranim.SetBool("IsRunning", false);
+                playeranim.SetBool("IsJumping", false);
             }
         }
         else
         {
-            playeranim.SetBool("isIdle", false);
-            playeranim.SetBool("isWalking", false);
+            playeranim.SetBool("IsIdle", false);
+            playeranim.SetBool("IsWalking", false);
+            playeranim.SetBool("IsJumping", false);
         }
 
         if (Input.GetButtonDown("Jump") && isJumping == false)
         {
             rigd.AddForce(0, jumpForce, 0, ForceMode.Impulse);
             isJumping = true;
+            playeranim.SetBool("IsWalking", false);
+            playeranim.SetBool("IsIdle", false);
+            playeranim.SetBool("IsRunning", false);
+            playeranim.SetBool("IsJumping", true);
         }
 
     }
