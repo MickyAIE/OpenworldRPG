@@ -4,13 +4,36 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+    public Animator animator;
+    public BoxCollider weaponHitBox;
+
+	void Start ()
+    {
+        animator = GetComponent<Animator>();
+        weaponHitBox = GetComponent<BoxCollider>();
+
+        weaponHitBox.isTrigger = true;
+        weaponHitBox.enabled = false;
+    }
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    void Attack()
+    {
+        weaponHitBox.enabled = true;
+        //attack animation
+
+    }
+
+    void Block()
+    {
+        //incoming damage * 0.15
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag.Equals("Enemy"))  // Enenmy Tag
+        {
+            //damage enemy health * charge time
+            weaponHitBox.enabled = false;
+        }
+    }
 }
