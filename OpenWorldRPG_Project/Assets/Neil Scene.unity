@@ -987,7 +987,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 694264928}
-  - component: {fileID: 694264927}
   m_Layer: 0
   m_Name: Characters_POLYGON_Knights 1
   m_TagString: Untagged
@@ -995,24 +994,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!95 &694264927
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 9500000, guid: c75e9b8e4f47b214b83b303193f69f57,
-    type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 694264926}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: c75e9b8e4f47b214b83b303193f69f57, type: 3}
-  m_Controller: {fileID: 9100000, guid: 511f24fd060ef465da64edde8c05d690, type: 2}
-  m_CullingMode: 1
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!4 &694264928
 Transform:
   m_ObjectHideFlags: 0
@@ -1676,6 +1657,10 @@ GameObject:
   - component: {fileID: 1217454390}
   - component: {fileID: 1217454388}
   - component: {fileID: 1217454389}
+  - component: {fileID: 1217454396}
+  - component: {fileID: 1217454395}
+  - component: {fileID: 1217454394}
+  - component: {fileID: 1217454397}
   m_Layer: 8
   m_Name: Make-Shift-Player
   m_TagString: Player
@@ -1711,7 +1696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08add70c808a3854da4f61c51b8067e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 694264927}
+  animator: {fileID: 0}
   weaponHitBox: {fileID: 1426125654}
 --- !u!54 &1217454390
 Rigidbody:
@@ -1766,6 +1751,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1217454394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1217454387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82cbfdfca96f76841bfd58474702fc0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAttack: {fileID: 1217454389}
+  playerShoot: {fileID: 1217454396}
+  playerSpells: {fileID: 1217454395}
+  attack: 0
+  shoot: 0
+  spell: 0
+  unarmed: 0
+--- !u!114 &1217454395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1217454387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7fa324ec3d4e9344b1f4d52c296d433, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1217454396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1217454387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e652ba9477c4814588917f7df2b479b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &1217454397
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1217454387}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: c75e9b8e4f47b214b83b303193f69f57, type: 3}
+  m_Controller: {fileID: 9100000, guid: 511f24fd060ef465da64edde8c05d690, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1321490822
 GameObject:
   m_ObjectHideFlags: 0
