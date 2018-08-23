@@ -14,25 +14,38 @@ public class PlayerAttack : MonoBehaviour {
 
         weaponHitBox.isTrigger = true;
         weaponHitBox.enabled = false;
+
     }
-	
+
+    private void Update()
+    {
+        Attack();
+
+        Block();
+    }
+
     void Attack()
     {
-        weaponHitBox.enabled = true;
-        //attack animation
-
+        if (Input.GetMouseButtonDown(0))
+        {
+            weaponHitBox.enabled = true;
+            //attack animation
+        }
     }
 
     void Block()
     {
-        //incoming damage * 0.15
+        if (Input.GetMouseButtonDown(1))
+        {
+            //block animation
+            //incoming damage * 0.15
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag.Equals("Enemy"))  // Enenmy Tag
         {
-            //damage enemy health * charge time
             weaponHitBox.enabled = false;
         }
     }
