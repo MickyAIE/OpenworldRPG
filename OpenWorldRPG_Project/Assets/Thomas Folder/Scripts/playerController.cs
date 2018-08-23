@@ -113,7 +113,7 @@ public class playerController : MonoBehaviour {
 
     private void OnCollisionEnter(Collision other)
     {
-        if(other.gameObject.name == "floor")
+        if(other.gameObject.tag == "Ground")
         {
             isJumping = false;
         }
