@@ -12,8 +12,9 @@ public class playerController : MonoBehaviour {
     public Rigidbody rigd;
     private Animator playeranim;
     private bool isJumping;
+    public GameObject Player;
 
-	void Start () {
+    void Start () {
         Cursor.lockState = CursorLockMode.Locked;
         playeranim = GetComponent<Animator>();
         running = false;

@@ -628,7 +628,7 @@ GameObject:
   - component: {fileID: 1992490407}
   - component: {fileID: 1992490406}
   - component: {fileID: 1992490410}
-  - component: {fileID: 1992490411}
+  - component: {fileID: 1992490412}
   m_Layer: 0
   m_Name: Temp Player
   m_TagString: Player
@@ -717,7 +717,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1992490411
+--- !u!114 &1992490412
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -725,12 +725,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1992490405}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 397fd45c9c1f56c4cb8e5a63b1744923, type: 3}
+  m_Script: {fileID: 11500000, guid: e2125a1788c2a174796589b07d882119, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StartSpeed: 10
+  speed: 0
+  Rspeed: 13
+  jumpForce: 0
+  running: 0
+  rigd: {fileID: 0}
   Player: {fileID: 1992490405}
-  m_Speed: 5
-  m_Input: 0
 --- !u!1 &2033639450
 GameObject:
   m_ObjectHideFlags: 0
