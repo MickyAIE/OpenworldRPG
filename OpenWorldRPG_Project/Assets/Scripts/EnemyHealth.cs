@@ -117,8 +117,7 @@ public class EnemyHealth : MonoBehaviour
         GetComponent<NavMeshAgent>().enabled = false;
         GetComponent<Rigidbody>().isKinematic = true;
         m_falling = true;
-        Experience.m_exp += m_enemyexpgiven;
+        Experience.experience += m_enemyexpgiven;
         Destroy(gameObject, 5f);
     }
-
 }
