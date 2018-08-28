@@ -32,7 +32,7 @@ public class Stats
     {
         isntfull = true;
         m_statmods.Add(mod);
-        m_statmods.Sort();
+        m_statmods.Sort(comparemodorder);
     }
     private int comparemodorder(StatModify a, StatModify b)
     {
@@ -54,6 +54,7 @@ public class Stats
     public float calculatefinalmod()
     {
         float m_finalvalue = m_base;
+        float m_sumpercent = 0;
 
         for(int i = 0; i < m_statmods.Count; i++)
         {
@@ -63,13 +64,22 @@ public class Stats
             {
                 m_finalvalue += m_statmods[i].m_value;
             }
-            else if (mod.m_type == Modtostats.Percent)
+            else if (mod.m_type == Modtostats.PercentAdd)
+            {
+                m_sumpercent += mod.m_value;
+                if(i +1 >= m_statmods.Count || m_statmods[i+1].m_type != Modtostats.PercentAdd)
+                {
+                    m_finalvalue *= 1 + m_sumpercent;
+                    m_sumpercent = 0;
+                }
+            }
+            else if (mod.m_type == Modtostats.Percentmult)
             {
                 m_finalvalue *= 1 + mod.m_value;
             }
         }
 
-        return (float) Mathf.Round(m_finalvalue, 4);
+        return (float)System.Math.Round(m_finalvalue, 4);
     }
 }
 
