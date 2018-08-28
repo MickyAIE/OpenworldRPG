@@ -74,6 +74,12 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
+  - m_Name: shieldBlocking
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
   - m_Name: meleeEquipped
     m_Type: 4
     m_DefaultFloat: 0
@@ -1318,9 +1324,6 @@ AnimatorStateMachine:
   - {fileID: 1109564435543473172}
   - {fileID: 1109827164265788004}
   m_StateMachineTransitions:
-  - first: {fileID: 1107275510993935148}
-    second:
-    - {fileID: 1109361929977969116}
   - first: {fileID: 1107470990402849080}
     second:
     - {fileID: 1109108196639494506}
@@ -1331,6 +1334,12 @@ AnimatorStateMachine:
     - {fileID: 1109851225068852220}
     - {fileID: 1109749516062283686}
     - {fileID: 1109214899001811816}
+  - first: {fileID: 1107275510993935148}
+    second:
+    - {fileID: 1109361929977969116}
+  - first: {fileID: 1107867923696322934}
+    second:
+    - {fileID: 1109761849619812676}
   - first: {fileID: 1107648542769439826}
     second:
     - {fileID: 1109082034252924264}
@@ -1338,9 +1347,6 @@ AnimatorStateMachine:
     second:
     - {fileID: 1109985593500066516}
     - {fileID: 1109275729895295248}
-  - first: {fileID: 1107867923696322934}
-    second:
-    - {fileID: 1109761849619812676}
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: 276, y: -72, z: 0}
   m_EntryPosition: {x: 60, y: 96, z: 0}
@@ -1467,12 +1473,12 @@ AnimatorStateMachine:
   - first: {fileID: 1107024480187541020}
     second:
     - {fileID: 1109426246036466240}
-  - first: {fileID: 1107080049093820180}
-    second:
-    - {fileID: 1109242869734659650}
   - first: {fileID: 1107893015284593050}
     second:
     - {fileID: 1109962848010417768}
+  - first: {fileID: 1107080049093820180}
+    second:
+    - {fileID: 1109242869734659650}
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: 50, y: 20, z: 0}
   m_EntryPosition: {x: 50, y: 120, z: 0}
