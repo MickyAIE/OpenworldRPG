@@ -9,13 +9,17 @@ public class testNpcDialogue : MonoBehaviour {
     public GameObject QuestMarker;
     public GameObject Dialogue;
     public GameObject Interact;
+    public bool interacted;
+
 
 
 
 	void Start () {
         npcanim = GetComponent<Animator>();
         npcanim.SetBool("IsIdle", false);
+        npcanim.SetBool("IsTalking", false);
         interactable = false;
+        interacted = false;
 	}
 
     private void Update()
@@ -26,6 +30,12 @@ public class testNpcDialogue : MonoBehaviour {
             QuestMarker.SetActive(false);
             Dialogue.SetActive(true);
             Cursor.lockState = CursorLockMode.Confined;
+            interacted = true;
+            interactable = false;
+            Interact.SetActive(false);
+            npcanim.SetBool("IsIdle", false);
+            npcanim.SetBool("IsWaving", false);
+            npcanim.SetBool("IsTalking", true);
         }
     }
 
@@ -35,11 +45,15 @@ public class testNpcDialogue : MonoBehaviour {
         {
             npcanim.SetBool("IsIdle", true);
             npcanim.SetBool("IsWaving", false);
+            npcanim.SetBool("IsTalking", false);
         }
         else
             return;
-        interactable = true;
-        Interact.SetActive(true);
+        if (interacted == false)
+        {
+            interactable = true;
+            Interact.SetActive(true);
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -48,11 +62,13 @@ public class testNpcDialogue : MonoBehaviour {
         {
             npcanim.SetBool("IsIdle", false);
             npcanim.SetBool("IsWaving", true);
+            npcanim.SetBool("IsTalking", false);
         }
         else
             return;
         interactable = false;
         Interact.SetActive(false);
+        Dialogue.SetActive(false);
     }
 
 }

@@ -5,15 +5,18 @@ using TMPro;
 
 public class Dialogue : MonoBehaviour {
 
-    public TextMeshProUGUI textDisplay;
+    public TextMeshPro textDisplay;
     public string[] sentences;
     private int index;
     public float typingSpeed;
     public GameObject nextb;
+    public int sentnum;
+    public GameObject DialogueOb;
 
     private void Start()
     {
         StartCoroutine(Type());
+        sentnum = 0;
     }
 
     private void Update()
@@ -21,6 +24,12 @@ public class Dialogue : MonoBehaviour {
         if (textDisplay.text == sentences[index])
         {
             nextb.SetActive(true);
+        }
+
+        if (sentnum >= sentences.Length)
+        {
+            DialogueOb.SetActive(false);
+           
         }
     }
 
@@ -42,10 +51,13 @@ public class Dialogue : MonoBehaviour {
             index++;
             textDisplay.text = "";
             StartCoroutine(Type());
+            sentnum += 1;
+            print("next");
         } else
         {
             textDisplay.text = "";
             Cursor.lockState = CursorLockMode.Locked;
+            sentnum += 1;
         }
     }
 }
