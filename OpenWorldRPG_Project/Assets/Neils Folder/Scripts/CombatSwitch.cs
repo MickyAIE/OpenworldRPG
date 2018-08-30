@@ -98,7 +98,6 @@ public class CombatSwitch : MonoBehaviour {
 
         ChangeWeapon();
 
-        animator.SetBool("changingWeapon", false);
     }
 
     void ChangeWeapon()
@@ -115,6 +114,8 @@ public class CombatSwitch : MonoBehaviour {
             playerSpells.enabled = false;
 
             animator.SetBool("inCombat", false);
+
+            animator.SetBool("changingWeapon", false);
         }
         if(attack)
         {
@@ -132,6 +133,8 @@ public class CombatSwitch : MonoBehaviour {
             animator.SetBool("magicEquipped", false);
 
             animator.SetBool("meleeEquipped", true);
+
+            animator.SetBool("changingWeapon", false);
         }
         if(shoot)
         {
@@ -149,6 +152,8 @@ public class CombatSwitch : MonoBehaviour {
             animator.SetBool("magicEquipped", false);
 
             animator.SetBool("rangedEquipped", true);
+
+            animator.SetBool("changingWeapon", false);
         }
         if(spell)
         {
@@ -166,6 +171,8 @@ public class CombatSwitch : MonoBehaviour {
             animator.SetBool("rangedEquipped", false);
 
             animator.SetBool("magicEquipped", true);
+
+            animator.SetBool("changingWeapon", false);
         }
     }
 

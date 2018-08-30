@@ -1480,7 +1480,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 984650986}
   m_LocalRotation: {x: 0.000000029802319, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.7062364, z: 0.22108507}
+  m_LocalPosition: {x: 0, y: 1.7062364, z: -1.305}
   m_LocalScale: {x: 1, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1475273718}
@@ -2228,6 +2228,7 @@ MonoBehaviour:
   playerAttack: {fileID: 1475273720}
   playerShoot: {fileID: 1475273721}
   playerSpells: {fileID: 1475273722}
+  animator: {fileID: 0}
   attack: 0
   shoot: 0
   spell: 0
