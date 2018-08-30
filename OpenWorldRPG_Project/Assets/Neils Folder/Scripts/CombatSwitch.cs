@@ -7,6 +7,7 @@ public class CombatSwitch : MonoBehaviour {
     public PlayerAttack playerAttack;
     public PlayerShoot playerShoot;
     public PlayerSpells playerSpells;
+    public Animator animator;
 
     public bool attack;
     public bool shoot;
@@ -16,10 +17,14 @@ public class CombatSwitch : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
+        animator = GetComponent<Animator>();
+
         attack = false;
         shoot = false;
         spell = false;
         unarmed = true;
+
+        animator.SetBool("inCombat", false);
 
         if (playerAttack != null)
         {
@@ -55,6 +60,7 @@ public class CombatSwitch : MonoBehaviour {
         {
             Debug.Log("K pressed");
             unarmed = true;
+            animator.SetBool("changingWeapon", true);
         }
 
         if (Input.GetKeyDown(KeyCode.J))
@@ -65,28 +71,34 @@ public class CombatSwitch : MonoBehaviour {
             {
                 unarmed = false;
                 attack = true;
+                animator.SetBool("changingWeapon", true);
             }
 
             else if(attack == true)
             {
                 attack = false;
                 shoot = true;
+                animator.SetBool("changingWeapon", true);
             }
 
             else if (shoot == true)
             {
                 shoot = false;
                 spell = true;
+                animator.SetBool("changingWeapon", true);
             }
 
             else if(spell == true)
             {
                 spell = false;
                 attack = true;
+                animator.SetBool("changingWeapon", true);
             }
         }
 
         ChangeWeapon();
+
+        animator.SetBool("changingWeapon", false);
     }
 
     void ChangeWeapon()
@@ -101,6 +113,8 @@ public class CombatSwitch : MonoBehaviour {
             playerAttack.enabled = false;
             playerShoot.enabled = false;
             playerSpells.enabled = false;
+
+            animator.SetBool("inCombat", false);
         }
         if(attack)
         {
@@ -112,6 +126,12 @@ public class CombatSwitch : MonoBehaviour {
             playerSpells.enabled = false;
             playerShoot.enabled = false;
             playerAttack.enabled = true;
+
+            animator.SetBool("inCombat", true);
+            animator.SetBool("rangedEquipped", false);
+            animator.SetBool("magicEquipped", false);
+
+            animator.SetBool("meleeEquipped", true);
         }
         if(shoot)
         {
@@ -123,6 +143,12 @@ public class CombatSwitch : MonoBehaviour {
             playerSpells.enabled = false;
             playerAttack.enabled = false;
             playerShoot.enabled = true;
+
+            animator.SetBool("inCombat", true);
+            animator.SetBool("meleeEquipped", false);
+            animator.SetBool("magicEquipped", false);
+
+            animator.SetBool("rangedEquipped", true);
         }
         if(spell)
         {
@@ -134,6 +160,12 @@ public class CombatSwitch : MonoBehaviour {
             playerAttack.enabled = false;
             playerShoot.enabled = false;
             playerSpells.enabled = true;
+
+            animator.SetBool("inCombat", true);
+            animator.SetBool("meleeEquipped", false);
+            animator.SetBool("rangedEquipped", false);
+
+            animator.SetBool("magicEquipped", true);
         }
     }
 

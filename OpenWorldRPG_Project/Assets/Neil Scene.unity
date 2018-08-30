@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0.1, g: 0.1, b: 0.1, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 4
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
@@ -1204,14 +1204,14 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 843530085}
-  m_LocalRotation: {x: -0.7704487, y: -0.13865922, z: 0.19449866, w: 0.5910607}
-  m_LocalPosition: {x: 10.1, y: 4.1, z: -6.4}
+  m_LocalRotation: {x: -0.15360528, y: -0.66208965, z: 0.696962, w: -0.22866279}
+  m_LocalPosition: {x: 9.100226, y: 2.3736372, z: -1.1006243}
   m_LocalScale: {x: 100.00002, y: 100.00002, z: 100.00002}
   m_Children:
   - {fileID: 102015823}
   m_Father: {fileID: 1274699257}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: -58.962, y: -115.952, z: 120.649}
+  m_LocalEulerAnglesHint: {x: 96.71, y: -130.63, z: 80.79}
 --- !u!23 &843530087
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1465,7 +1465,6 @@ GameObject:
   - component: {fileID: 984650991}
   - component: {fileID: 984650990}
   - component: {fileID: 984650989}
-  - component: {fileID: 984650988}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1487,20 +1486,6 @@ Transform:
   m_Father: {fileID: 1475273718}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &984650988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114787045294644428, guid: 0177181cf6298cf4bab839386e8b8822,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 984650986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5566807d11c0a2c40accf35e98bb2806, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sensetivity: 2
-  smoothing: 2
 --- !u!81 &984650989
 AudioListener:
   m_ObjectHideFlags: 0
@@ -2135,9 +2120,9 @@ GameObject:
   - component: {fileID: 1475273720}
   - component: {fileID: 1475273719}
   - component: {fileID: 1475273714}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2260,6 +2245,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1475273717}
   weaponHitBox: {fileID: 102015822}
+  shieldEquipped: 0
+  blocking: 0
 --- !u!114 &1475273721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2423,7 +2410,7 @@ GameObject:
   - component: {fileID: 1735729616}
   m_Layer: 0
   m_Name: floor
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2442,7 +2429,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 0f566856e063c2f4eac94f6de5856495, type: 2}
+  - {fileID: 2100000, guid: 53a9a651559630f449e50ba96901f21c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

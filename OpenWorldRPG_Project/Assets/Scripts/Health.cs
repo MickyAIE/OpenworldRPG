@@ -35,10 +35,10 @@ public class Health : MonoBehaviour
     Animator m_anim;                                                // Animator component
     AudioSource m_audio;                                            // Audio component
     public AudioClip ourdeathclip;                                  // Our death sound
-    public AudioClip ourmanafail;                                   // Failed mana sound
+    public AudioClip ourmanafail;                                   // Failed mana sound\
     // Playermovement m_playermovement;                             // Reference to the movement
 
-
+    
 
 
 
