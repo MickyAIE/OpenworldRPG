@@ -72,6 +72,7 @@ public class CombatSwitch : MonoBehaviour {
                 unarmed = false;
                 attack = true;
                 animator.SetBool("changingWeapon", true);
+                animator.SetBool("inCombat", false);
             }
 
             else if(attack == true)
@@ -79,6 +80,7 @@ public class CombatSwitch : MonoBehaviour {
                 attack = false;
                 shoot = true;
                 animator.SetBool("changingWeapon", true);
+                animator.SetBool("inCombat", true);
             }
 
             else if (shoot == true)
@@ -86,6 +88,7 @@ public class CombatSwitch : MonoBehaviour {
                 shoot = false;
                 spell = true;
                 animator.SetBool("changingWeapon", true);
+                animator.SetBool("inCombat", true);
             }
 
             else if(spell == true)
@@ -93,6 +96,7 @@ public class CombatSwitch : MonoBehaviour {
                 spell = false;
                 attack = true;
                 animator.SetBool("changingWeapon", true);
+                animator.SetBool("inCombat", true);
             }
         }
 
@@ -116,6 +120,10 @@ public class CombatSwitch : MonoBehaviour {
             animator.SetBool("inCombat", false);
 
             animator.SetBool("changingWeapon", false);
+
+            animator.SetBool("rangedEquipped", false);
+            animator.SetBool("magicEquipped", false);
+            animator.SetBool("meleeEquipped", false);
         }
         if(attack)
         {
