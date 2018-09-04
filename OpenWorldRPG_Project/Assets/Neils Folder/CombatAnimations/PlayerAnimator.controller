@@ -24,7 +24,7 @@ AnimatorController:
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
-    m_DefaultBool: 1
+    m_DefaultBool: 0
     m_Controller: {fileID: 0}
   - m_Name: meleeAttack
     m_Type: 4
@@ -423,7 +423,7 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 1
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0.06349541
   m_TransitionOffset: 0
   m_ExitTime: 0.1
   m_HasExitTime: 1
@@ -856,10 +856,7 @@ AnimatorStateTransition:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: inCombat
-    m_EventTreshold: 0
+  m_Conditions: []
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 0}
   m_Solo: 0
@@ -1696,7 +1693,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400002, guid: f585296a52c1d7c43a670b6083669de2, type: 3}
+  m_Motion: {fileID: 7400028, guid: 6cae2f82a0a62ff4ab9be3eeeda19688, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2161,6 +2158,9 @@ AnimatorTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: inCombat
     m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: meleeAttack
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 1107470990402849080}
   m_DstState: {fileID: 0}
   m_Solo: 0
@@ -2324,6 +2324,9 @@ AnimatorTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: inCombat
     m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: magicAttack
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 1107867923696322934}
   m_DstState: {fileID: 0}
   m_Solo: 0
@@ -2387,6 +2390,9 @@ AnimatorTransition:
     m_EventTreshold: 0
   - m_ConditionMode: 1
     m_ConditionEvent: inCombat
+    m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: rangedAttack
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 1107275510993935148}
   m_DstState: {fileID: 0}

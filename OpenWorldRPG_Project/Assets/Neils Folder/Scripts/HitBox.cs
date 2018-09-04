@@ -6,19 +6,36 @@ public class HitBox : MonoBehaviour {
 
     private Transform eTarget;
     public void Seek(Transform enemyTarget) { eTarget = enemyTarget; }
-    public Collider hitBox;
+    public BoxCollider hitBox;
     public Vector3 hitPoint;
 
     public int damage = 20;
 
+    bool warnMeOnce;
+
     void Start () {
-		
-	}
+        hitBox = GetComponentInChildren<BoxCollider>();
+
+        warnMeOnce = true;
+    }
 	
 	// Update is called once per frame
 	void Update ()
     {
-        Vector3 hitPoint = eTarget.position - transform.position;
+        if (warnMeOnce == true)
+        {
+            Debug.LogWarning("eTarget = null");
+        }
+
+        if (eTarget != null)
+        {
+            Vector3 hitPoint = eTarget.position - transform.position;
+        }
+        else
+        {
+            warnMeOnce = false;
+            // #lolololol hacks
+        }
 	}
 
     private void OnTriggerEnter(Collider other)
