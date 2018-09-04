@@ -13,6 +13,8 @@ public class playerController : MonoBehaviour {
     private Animator playeranim;
     private bool isJumping;
     public GameObject Player;
+    public bool canEnter;
+    public int EnterTimer;
 
     void Start () {
         Cursor.lockState = CursorLockMode.Locked;
@@ -21,6 +23,8 @@ public class playerController : MonoBehaviour {
         speed = StartSpeed;
         rigd = GetComponent<Rigidbody>();
         isJumping = false;
+        canEnter = true;
+        EnterTimer = 0;
         
 	}
 	
@@ -107,6 +111,17 @@ public class playerController : MonoBehaviour {
             playeranim.SetBool("IsIdle", false);
             playeranim.SetBool("IsRunning", false);
             playeranim.SetBool("IsJumping", true);
+        }
+
+        if(canEnter == false)
+        {
+            EnterTimer += 1;
+        }
+
+        if(EnterTimer >= 30)
+        {
+            canEnter = true;
+            EnterTimer = 0;
         }
 
     }
