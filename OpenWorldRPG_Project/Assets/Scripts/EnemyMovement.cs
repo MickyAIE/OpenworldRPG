@@ -45,7 +45,7 @@ public class EnemyMovement : MonoBehaviour {
         
 
         float m_PlayerDistance = (m_Player.transform.position - transform.position).magnitude; //use the player distance to see if player is in range
-        float m_AtPlayer = 0.5f;
+        float m_AtPlayer = 0.2f;
 
         if(m_PlayerDistance > m_AtPlayer)
         {
@@ -55,6 +55,7 @@ public class EnemyMovement : MonoBehaviour {
         else
         {
             m_EnemyNav.isStopped = true;
+            m_moveSpeed = 0;
         }
 
         //m_playerDistance = m_playerPosition - m_enemyPosition;
