@@ -110,6 +110,7 @@ public class EnemyHealth : MonoBehaviour
         m_anim.SetTrigger("Dead");
         m_soundenemy.clip = m_deathclip;
         m_soundenemy.Play();
+        Experience.experience += m_enemyexpgiven;
     }
 
     public void m_actualfalling()
@@ -117,7 +118,6 @@ public class EnemyHealth : MonoBehaviour
         GetComponent<NavMeshAgent>().enabled = false;
         GetComponent<Rigidbody>().isKinematic = true;
         m_falling = true;
-        Experience.experience += m_enemyexpgiven;
         Destroy(gameObject, 5f);
     }
 }

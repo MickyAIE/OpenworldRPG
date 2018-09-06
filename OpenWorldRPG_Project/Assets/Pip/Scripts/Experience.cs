@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class Experience : MonoBehaviour
@@ -31,19 +29,14 @@ public class Experience : MonoBehaviour
         experienceSlider.maxValue = requiredExperience;
 
         experienceGrowth = 1.50f;
-
     }
 
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.F))
-        {
-            experience += 20;
-            experienceSlider.value = experience;
-            experienceText.text = "" + experience;
-        }
 
-      
+            experienceSlider.value = experience;
+            experienceText.text = " " + experience;
+
         if (experienceSlider.value >= experienceSlider.maxValue)
         {
             LevelUp();
@@ -52,7 +45,6 @@ public class Experience : MonoBehaviour
 
     void LevelUp()
     {
-        experience = experience -= requiredExperience;
         experienceSlider.value = experience;
 
         requiredExperience = (int)(requiredExperience * experienceGrowth);

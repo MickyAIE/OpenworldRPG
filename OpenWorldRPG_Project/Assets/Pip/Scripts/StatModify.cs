@@ -4,9 +4,9 @@ using UnityEngine;
 
 public enum Modtostats
 {
-    Flat,
-    PercentAdd,
-    Percentmult,
+    Flat = 100,
+    PercentAdd = 200,
+    Percentmult = 300,
 }
 
 public class StatModify
