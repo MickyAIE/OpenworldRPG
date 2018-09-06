@@ -7,6 +7,8 @@ public class interiorDoorEnter : MonoBehaviour {
     public GameObject Exit;
     public GameObject Player;
     public playerController controller;
+    public GameObject EnterText;
+    private bool EnterPress;
 
 
 
@@ -19,15 +21,26 @@ public class interiorDoorEnter : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.tag == ("Player") && controller.canEnter == true)
+		if (EnterPress == true && Input.GetKeyDown(KeyCode.F))
         {
+            print("f");
             Player.transform.position = Exit.transform.position;
             controller.canEnter = false;
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        EnterText.SetActive(true);
+        if(other.tag == ("Player") && controller.canEnter == true )
+        {
+            EnterPress = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        EnterText.SetActive(false);
+        EnterPress = false;
     }
 }
