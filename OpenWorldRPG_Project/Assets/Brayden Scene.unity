@@ -717,6 +717,7 @@ GameObject:
   - component: {fileID: 1992490406}
   - component: {fileID: 1992490410}
   - component: {fileID: 1992490412}
+  - component: {fileID: 1992490411}
   m_Layer: 0
   m_Name: Temp Player
   m_TagString: Player
@@ -806,6 +807,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!135 &1992490411
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1992490405}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 20
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1992490412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -824,6 +837,8 @@ MonoBehaviour:
   running: 0
   rigd: {fileID: 0}
   Player: {fileID: 1992490405}
+  canEnter: 0
+  EnterTimer: 0
 --- !u!1 &2033639450
 GameObject:
   m_ObjectHideFlags: 0

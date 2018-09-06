@@ -62,6 +62,7 @@ public class EnemyMovement : MonoBehaviour {
 		//if (m_Player) { }
         if (m_EnemyFollow == false)
         {
+            m_EnemyNav.isStopped = true;
             return;
         }
 	}
@@ -70,8 +71,16 @@ public class EnemyMovement : MonoBehaviour {
     {
         if(other.tag.Equals("Player") == true)
         {
+            m_EnemyFollow = true;
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag.Equals("Player") == true)
+        {
             m_EnemyFollow = false;
         }
+    
     }
 
 }
