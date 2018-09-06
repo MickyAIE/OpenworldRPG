@@ -27,6 +27,15 @@ public class PlayerAttack : MonoBehaviour {
         Attack();
 
         Block();
+
+        if (shieldEquipped == true)
+        {
+            animator.SetBool("shieldBlocking", true);
+        }
+        else
+        {
+            animator.SetBool("shieldBlocking", false);
+        }
     }
 
     void Attack()
@@ -71,7 +80,6 @@ public class PlayerAttack : MonoBehaviour {
         {
             Debug.Log("mouse 1 up");
 
-            animator.SetBool("shieldBlocking", false);
             animator.SetBool("blocking", false);
             blocking = false;
         }
