@@ -21,6 +21,7 @@ public class EnemyMovement : MonoBehaviour {
     float m_playerPosition; //might not need yet, could be useful if tracking two players and finding closest 
     float m_playerDistance;
     GameObject m_Player;
+    public Transform Player;
 
     private Rigidbody m_Rigidbody;
     private NavMeshAgent m_EnemyNav;
@@ -41,6 +42,7 @@ public class EnemyMovement : MonoBehaviour {
     {
         //m_playerPosition = new Vector3  (Player.transform);
         //Player.transform.position = new Vector3(playerposition);
+        
 
         float m_PlayerDistance = (m_Player.transform.position - transform.position).magnitude; //use the player distance to see if player is in range
         float m_AtPlayer = 0.5f;
@@ -65,7 +67,12 @@ public class EnemyMovement : MonoBehaviour {
             m_EnemyNav.isStopped = true;
             return;
         }
-	}
+        if (m_EnemyFollow == true)
+        {
+            transform.LookAt(Player);
+            return;
+        }
+    }
 
     private void OnTriggerEnter(Collider other)
     {

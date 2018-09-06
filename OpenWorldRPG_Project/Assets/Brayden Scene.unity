@@ -941,6 +941,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_moveSpeed: 4
   m_targetDistance: 20
+  Player: {fileID: 1992490409}
 --- !u!54 &2033639456
 Rigidbody:
   m_ObjectHideFlags: 0
