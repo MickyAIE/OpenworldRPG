@@ -1,5 +1,17 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+guid: 7405918d868aa984798bfbe7191344e9
+=======
 guid: bdc49951491002e438f61e50e61ec351
+>>>>>>> 0eb576a6e6c495b367e635a8a20fbe73d335121f
+=======
+guid: fe369f62e6fcf554598411924a2d2300
+>>>>>>> parent of 1ede7d7... creatures
+=======
+guid: bdc49951491002e438f61e50e61ec351
+>>>>>>> 5afe789a8449a8c074934132e6047ab4dc43c263
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

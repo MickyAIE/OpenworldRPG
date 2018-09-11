@@ -1,0 +1,881 @@
+fileFormatVersion: 2
+guid: f517b00f2fcbeec44a432529a610f3dd
+timeCreated: 1481314138
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: VAMPIRE
+    100004: VAMPIRE_
+    100006: VAMPIRE_ Head
+    100008: VAMPIRE_ L Calf
+    100010: VAMPIRE_ L Clavicle
+    100012: VAMPIRE_ L Finger0
+    100014: VAMPIRE_ L Finger01
+    100016: VAMPIRE_ L Finger02
+    100018: VAMPIRE_ L Finger1
+    100020: VAMPIRE_ L Finger11
+    100022: VAMPIRE_ L Finger12
+    100024: VAMPIRE_ L Finger2
+    100026: VAMPIRE_ L Finger21
+    100028: VAMPIRE_ L Finger22
+    100030: VAMPIRE_ L Finger3
+    100032: VAMPIRE_ L Finger31
+    100034: VAMPIRE_ L Finger32
+    100036: VAMPIRE_ L Finger4
+    100038: VAMPIRE_ L Finger41
+    100040: VAMPIRE_ L Finger42
+    100042: VAMPIRE_ L Foot
+    100044: VAMPIRE_ L Forearm
+    100046: VAMPIRE_ L Hand
+    100048: VAMPIRE_ L Thigh
+    100050: VAMPIRE_ L Toe0
+    100052: VAMPIRE_ L UpperArm
+    100054: VAMPIRE_ Neck
+    100056: VAMPIRE_ Neck1
+    100058: VAMPIRE_ Pelvis
+    100060: VAMPIRE_ Ponytail1
+    100062: VAMPIRE_ R Calf
+    100064: VAMPIRE_ R Clavicle
+    100066: VAMPIRE_ R Finger0
+    100068: VAMPIRE_ R Finger01
+    100070: VAMPIRE_ R Finger02
+    100072: VAMPIRE_ R Finger1
+    100074: VAMPIRE_ R Finger11
+    100076: VAMPIRE_ R Finger12
+    100078: VAMPIRE_ R Finger2
+    100080: VAMPIRE_ R Finger21
+    100082: VAMPIRE_ R Finger22
+    100084: VAMPIRE_ R Finger3
+    100086: VAMPIRE_ R Finger31
+    100088: VAMPIRE_ R Finger32
+    100090: VAMPIRE_ R Finger4
+    100092: VAMPIRE_ R Finger41
+    100094: VAMPIRE_ R Finger42
+    100096: VAMPIRE_ R Foot
+    100098: VAMPIRE_ R Forearm
+    100100: VAMPIRE_ R Hand
+    100102: VAMPIRE_ R Thigh
+    100104: VAMPIRE_ R Toe0
+    100106: VAMPIRE_ R UpperArm
+    100108: VAMPIRE_ Spine
+    100110: VAMPIRE_ Spine1
+    400000: //RootNode
+    400002: VAMPIRE
+    400004: VAMPIRE_
+    400006: VAMPIRE_ Head
+    400008: VAMPIRE_ L Calf
+    400010: VAMPIRE_ L Clavicle
+    400012: VAMPIRE_ L Finger0
+    400014: VAMPIRE_ L Finger01
+    400016: VAMPIRE_ L Finger02
+    400018: VAMPIRE_ L Finger1
+    400020: VAMPIRE_ L Finger11
+    400022: VAMPIRE_ L Finger12
+    400024: VAMPIRE_ L Finger2
+    400026: VAMPIRE_ L Finger21
+    400028: VAMPIRE_ L Finger22
+    400030: VAMPIRE_ L Finger3
+    400032: VAMPIRE_ L Finger31
+    400034: VAMPIRE_ L Finger32
+    400036: VAMPIRE_ L Finger4
+    400038: VAMPIRE_ L Finger41
+    400040: VAMPIRE_ L Finger42
+    400042: VAMPIRE_ L Foot
+    400044: VAMPIRE_ L Forearm
+    400046: VAMPIRE_ L Hand
+    400048: VAMPIRE_ L Thigh
+    400050: VAMPIRE_ L Toe0
+    400052: VAMPIRE_ L UpperArm
+    400054: VAMPIRE_ Neck
+    400056: VAMPIRE_ Neck1
+    400058: VAMPIRE_ Pelvis
+    400060: VAMPIRE_ Ponytail1
+    400062: VAMPIRE_ R Calf
+    400064: VAMPIRE_ R Clavicle
+    400066: VAMPIRE_ R Finger0
+    400068: VAMPIRE_ R Finger01
+    400070: VAMPIRE_ R Finger02
+    400072: VAMPIRE_ R Finger1
+    400074: VAMPIRE_ R Finger11
+    400076: VAMPIRE_ R Finger12
+    400078: VAMPIRE_ R Finger2
+    400080: VAMPIRE_ R Finger21
+    400082: VAMPIRE_ R Finger22
+    400084: VAMPIRE_ R Finger3
+    400086: VAMPIRE_ R Finger31
+    400088: VAMPIRE_ R Finger32
+    400090: VAMPIRE_ R Finger4
+    400092: VAMPIRE_ R Finger41
+    400094: VAMPIRE_ R Finger42
+    400096: VAMPIRE_ R Foot
+    400098: VAMPIRE_ R Forearm
+    400100: VAMPIRE_ R Hand
+    400102: VAMPIRE_ R Thigh
+    400104: VAMPIRE_ R Toe0
+    400106: VAMPIRE_ R UpperArm
+    400108: VAMPIRE_ Spine
+    400110: VAMPIRE_ Spine1
+    4300000: VAMPIRE
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: VAMPIRE
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: <Root Transform>
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: VAMPIRE_ Pelvis
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ L Thigh
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ R Thigh
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ L Calf
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ R Calf
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ L Foot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ R Foot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ L Clavicle
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ R Clavicle
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ L UpperArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ R UpperArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ L Forearm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ R Forearm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ L Hand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ R Hand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ L Toe0
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ R Toe0
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ L Finger1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ L Finger11
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ L Finger12
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ L Finger0
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ L Finger01
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ L Finger02
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ L Finger2
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ L Finger21
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ L Finger22
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ L Finger3
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ L Finger31
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ L Finger32
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ L Finger4
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ L Finger41
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ L Finger42
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ R Finger1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ R Finger11
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ R Finger12
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ R Finger0
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ R Finger01
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ R Finger02
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ R Finger2
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ R Finger21
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ R Finger22
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ R Finger3
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ R Finger31
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ R Finger32
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ R Finger4
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ R Finger41
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ R Finger42
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: VAMPIRE_ Ponytail1
+      humanName: Jaw
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: VAMPIRE(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: VAMPIRE
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_
+      position: {x: 0, y: 1.41734052, z: -.264997751}
+      rotation: {x: -.500000358, y: .499999672, z: .499999672, w: .500000358}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ Pelvis
+      position: {x: 0, y: 0, z: .0631693602}
+      rotation: {x: -.5, y: .5, z: .499999315, w: .500000715}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ Spine
+      position: {x: -.143407747, y: -.000247783668, z: 1.99154883e-07}
+      rotation: {x: -2.15707405e-06, y: 7.83329256e-07, z: -.140628546, w: .990062416}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ R Thigh
+      position: {x: .137666628, y: .0401720405, z: -.153100699}
+      rotation: {x: -.242732152, y: .965210199, z: -.0653136671, w: -.0720026642}
+      scale: {x: .999999881, y: 1, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ R Calf
+      position: {x: -.708184242, y: 0, z: 3.81469718e-08}
+      rotation: {x: -1.65284177e-08, y: 2.0897728e-09, z: .331487507, w: .94345963}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ R Foot
+      position: {x: -.72360307, y: 2.38418574e-09, z: -3.81469718e-08}
+      rotation: {x: .0710158646, y: .0364209414, z: -.224435076, w: .971215308}
+      scale: {x: 1.00000024, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: VAMPIRE_ R Toe0
+      position: {x: -.119958065, y: .216888964, z: 0}
+      rotation: {x: 1.77807049e-08, y: -1.38294363e-08, z: -.707106829, w: .707106829}
+      scale: {x: .99999994, y: .99999994, z: .99999994}
+      transformModified: 1
+    - name: VAMPIRE_ Spine1
+      position: {x: -.324135572, y: -.000247879012, z: -6.87577995e-10}
+      rotation: {x: -2.98023153e-08, y: 1.78813892e-07, z: -.106898062, w: .994269967}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ Neck
+      position: {x: -.324100018, y: -.000117645264, z: -3.26253941e-10}
+      rotation: {x: -8.94069672e-08, y: -2.08616257e-07, z: .00576671958, w: .99998337}
+      scale: {x: .99999994, y: .99999994, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ Neck1
+      position: {x: -.154215083, y: -.000117492673, z: -3.25962896e-10}
+      rotation: {x: 1.00660548e-13, y: 4.06618142e-07, z: -.146603033, w: .989195406}
+      scale: {x: .99999994, y: .99999994, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ Head
+      position: {x: -.154179603, y: -1.52587887e-07, z: 0}
+      rotation: {x: -1.84810431e-10, y: -5.32825993e-07, z: .192253947, w: .981345236}
+      scale: {x: .99999994, y: .99999994, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ Ponytail1
+      position: {x: .00931777898, y: .0924757347, z: 1.5491496e-06}
+      rotation: {x: 1.45443846e-12, y: 2.06840718e-06, z: -.745748639, w: .6662274}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ L Clavicle
+      position: {x: -.324064463, y: -3.05175774e-07, z: .0812486634}
+      rotation: {x: -.610307157, y: -.000244090072, z: .792164803, w: -.000314541947}
+      scale: {x: 1, y: .99999994, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ L UpperArm
+      position: {x: -.209396318, y: 0, z: 0}
+      rotation: {x: -.15493077, y: .0989792421, z: .0172291398, w: .982803524}
+      scale: {x: .99999994, y: 1.00000012, z: .99999994}
+      transformModified: 1
+    - name: VAMPIRE_ L Forearm
+      position: {x: -.582974672, y: -3.81469718e-08, z: 0}
+      rotation: {x: -.0137343314, y: .0262693018, z: .0274355821, w: .999183953}
+      scale: {x: .99999994, y: .99999994, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ L Hand
+      position: {x: -.62253201, y: 3.81469718e-08, z: 1.52587887e-07}
+      rotation: {x: -.528011858, y: .0428134762, z: .0684267208, w: .845392406}
+      scale: {x: 1, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: VAMPIRE_ L Finger0
+      position: {x: -.0663388819, y: .00885452237, z: -.0514183789}
+      rotation: {x: .760715127, y: -.0755198002, z: .0646113157, w: .641431749}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ L Finger01
+      position: {x: -.0721522495, y: 0, z: -7.62939436e-08}
+      rotation: {x: -7.98514765e-09, y: -1.46216692e-08, z: -.0362018906, w: .999344528}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ L Finger02
+      position: {x: -.0537294, y: 7.62939436e-08, z: 7.62939436e-08}
+      rotation: {x: 1.65965242e-09, y: -1.55233426e-08, z: -.195116401, w: .980780065}
+      scale: {x: 1.00000012, y: 1, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ L Finger1
+      position: {x: -.227506906, y: -.00546829216, z: -.0803284422}
+      rotation: {x: -.0631071776, y: -.344653517, z: .166379347, w: .921710074}
+      scale: {x: 1, y: 1, z: .99999994}
+      transformModified: 1
+    - name: VAMPIRE_ L Finger11
+      position: {x: -.0750031993, y: 0, z: 0}
+      rotation: {x: -1.82539154e-07, y: -2.68220816e-07, z: -.0377667397, w: .999286592}
+      scale: {x: 1, y: .99999994, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ L Finger12
+      position: {x: -.0568836965, y: 0, z: 0}
+      rotation: {x: -2.92484987e-08, y: 1.38123122e-08, z: -.320035905, w: .947405398}
+      scale: {x: 1.00000024, y: 1.00000024, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ L Finger2
+      position: {x: -.227344587, y: -.00857559219, z: -.0247150417}
+      rotation: {x: -.00376977446, y: -.0265030358, z: -.0560565703, w: .998068631}
+      scale: {x: 1, y: .99999994, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ L Finger21
+      position: {x: -.0738586411, y: 0, z: 0}
+      rotation: {x: -9.38307352e-08, y: 7.0407981e-07, z: -.0377700254, w: .999286532}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ L Finger22
+      position: {x: -.0656528473, y: 0, z: 0}
+      rotation: {x: 1.78274995e-08, y: -1.25496822e-08, z: -.261524796, w: .965196788}
+      scale: {x: 1.00000012, y: 1, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ L Finger3
+      position: {x: -.222159952, y: -.0107633974, z: .0240038298}
+      rotation: {x: -.0159947257, y: -.0206789933, z: -.0498903021, w: .99841249}
+      scale: {x: 1, y: 1, z: .99999994}
+      transformModified: 1
+    - name: VAMPIRE_ L Finger31
+      position: {x: -.0715265647, y: -1.52587887e-07, z: 2.28881831e-07}
+      rotation: {x: 7.96862807e-08, y: 9.61124783e-07, z: -.0377684459, w: .999286592}
+      scale: {x: 1, y: .99999994, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ L Finger32
+      position: {x: -.0527021028, y: 0, z: 7.62939436e-08}
+      rotation: {x: 1.42606673e-08, y: 4.70610173e-09, z: -.199054852, w: .979988337}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ L Finger4
+      position: {x: -.204698399, y: -.0130764768, z: .0644425154}
+      rotation: {x: -.0944863781, y: -.0119253984, z: -.042006053, w: .99456805}
+      scale: {x: 1, y: 1, z: .99999994}
+      transformModified: 1
+    - name: VAMPIRE_ L Finger41
+      position: {x: -.0600162484, y: 1.52587887e-07, z: -1.52587887e-07}
+      rotation: {x: .00143127132, y: .0189355481, z: -.0360048115, w: .999171197}
+      scale: {x: .999999881, y: .99999994, z: .999999881}
+      transformModified: 1
+    - name: VAMPIRE_ L Finger42
+      position: {x: -.0545126349, y: 0, z: 0}
+      rotation: {x: .0127155101, y: .0583899096, z: -.212401345, w: .975353599}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1.00000024}
+      transformModified: 1
+    - name: VAMPIRE_ R Clavicle
+      position: {x: -.324064463, y: 1.52587887e-07, z: -.0812486634}
+      rotation: {x: .610307157, y: .000241884816, z: .792164803, w: -.000316224177}
+      scale: {x: 1, y: .99999994, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ R UpperArm
+      position: {x: -.209396333, y: 0, z: 0}
+      rotation: {x: .154930845, y: -.0989778861, z: .0172297712, w: .982803643}
+      scale: {x: 1, y: .99999994, z: .99999994}
+      transformModified: 1
+    - name: VAMPIRE_ R Forearm
+      position: {x: -.582974553, y: 3.81469718e-08, z: 0}
+      rotation: {x: .0137343667, y: -.0262697544, z: .0274352524, w: .999184012}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ R Hand
+      position: {x: -.62253201, y: 0, z: 0}
+      rotation: {x: .528011799, y: -.0428134911, z: .0684266984, w: .845392406}
+      scale: {x: 1, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ R Finger4
+      position: {x: -.204698399, y: -.013076324, z: -.0644425154}
+      rotation: {x: .0944863036, y: .0119259739, z: -.0420053005, w: .99456805}
+      scale: {x: 1, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: VAMPIRE_ R Finger41
+      position: {x: -.0600163266, y: 0, z: 0}
+      rotation: {x: -.00143122661, y: -.0189359691, z: -.0360040851, w: .999171257}
+      scale: {x: .999999881, y: .99999994, z: .999999881}
+      transformModified: 1
+    - name: VAMPIRE_ R Finger42
+      position: {x: -.0545126349, y: -1.52587887e-07, z: 0}
+      rotation: {x: -.0127155306, y: -.0583898872, z: -.21240145, w: .975353599}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ R Finger3
+      position: {x: -.222160175, y: -.0107633974, z: -.0240039825}
+      rotation: {x: .0159950219, y: .0206777062, z: -.0498898253, w: .998412609}
+      scale: {x: 1, y: 1.00000012, z: .99999994}
+      transformModified: 1
+    - name: VAMPIRE_ R Finger31
+      position: {x: -.0715266392, y: 0, z: -7.62939436e-08}
+      rotation: {x: 5.96046021e-08, y: -5.36441405e-07, z: -.0377678461, w: .999286532}
+      scale: {x: 1, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: VAMPIRE_ R Finger32
+      position: {x: -.0527021028, y: 0, z: 0}
+      rotation: {x: 7.3014812e-09, y: -1.48307422e-09, z: -.199054882, w: .979988337}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: VAMPIRE_ R Finger2
+      position: {x: -.227344617, y: -.00857559219, z: .0247151181}
+      rotation: {x: .0037698145, y: .0265030786, z: -.0560558513, w: .99806875}
+      scale: {x: 1, y: .99999994, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ R Finger21
+      position: {x: -.0738585666, y: 0, z: -1.52587887e-07}
+      rotation: {x: -2.98023082e-08, y: -3.61352988e-07, z: -.0377699845, w: .999286473}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ R Finger22
+      position: {x: -.0656527728, y: 0, z: 0}
+      rotation: {x: -2.63697597e-08, y: -8.29345392e-09, z: -.261524826, w: .965196729}
+      scale: {x: 1, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ R Finger0
+      position: {x: -.0663389564, y: .00885452237, z: .0514185317}
+      rotation: {x: .760714948, y: -.0755209252, z: -.0646103919, w: -.641431868}
+      scale: {x: 1.00000012, y: .99999994, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ R Finger01
+      position: {x: -.072152406, y: -3.81469718e-08, z: 0}
+      rotation: {x: 1.48913939e-08, y: -5.39450429e-10, z: -.0362019055, w: .999344528}
+      scale: {x: 1, y: 1, z: .99999994}
+      transformModified: 1
+    - name: VAMPIRE_ R Finger02
+      position: {x: -.0537294, y: -1.14440915e-07, z: -7.62939436e-08}
+      rotation: {x: -3.65369091e-09, y: 7.26865512e-10, z: -.19511646, w: .980780065}
+      scale: {x: .99999994, y: .999999881, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ R Finger1
+      position: {x: -.22750698, y: -.00546829216, z: .0803284422}
+      rotation: {x: .0631085709, y: .344652593, z: .166380093, w: .921710193}
+      scale: {x: 1, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: VAMPIRE_ R Finger11
+      position: {x: -.0750032812, y: 0, z: -7.62939436e-08}
+      rotation: {x: 4.47034623e-08, y: 1.01327851e-06, z: -.0377711989, w: .999286413}
+      scale: {x: 1, y: .99999994, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ R Finger12
+      position: {x: -.0568836182, y: 0, z: -7.62939436e-08}
+      rotation: {x: 1.1559723e-08, y: 2.71944064e-11, z: -.320035905, w: .947405457}
+      scale: {x: 1.00000012, y: 1, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ L Thigh
+      position: {x: .137666628, y: .0401712023, z: .153100908}
+      rotation: {x: -.242732361, y: .965209961, z: .065316759, w: .0720042512}
+      scale: {x: .99999994, y: .99999994, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ L Calf
+      position: {x: -.708184123, y: -3.81469718e-08, z: 3.81469718e-08}
+      rotation: {x: 4.60710803e-09, y: -2.99696232e-08, z: .331487536, w: .94345963}
+      scale: {x: .999999821, y: .999999881, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ L Foot
+      position: {x: -.723602891, y: 1.66893006e-08, z: 0}
+      rotation: {x: -.0710158199, y: -.0364203081, z: -.224434495, w: .971215427}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: VAMPIRE_ L Toe0
+      position: {x: -.11995808, y: .216888994, z: -3.81469718e-08}
+      rotation: {x: -2.79881429e-09, y: 1.8274612e-08, z: -.707106829, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: VAMPIRE_
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

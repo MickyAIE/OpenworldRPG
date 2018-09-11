@@ -27,7 +27,7 @@ public class ItemSlot : MonoBehaviour
         }
     }
 
-    private void OnValidate()
+    protected virtual void OnValidate()
     {
         if (m_image == null)
             m_image = GetComponent<Image>();

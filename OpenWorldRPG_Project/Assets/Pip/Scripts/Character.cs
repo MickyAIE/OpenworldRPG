@@ -7,4 +7,5 @@ public class Character : MonoBehaviour
     public Stats Strength;
     public Stats Agility;
     public Stats Intelligence;
+    public Stats Vitality;
 }

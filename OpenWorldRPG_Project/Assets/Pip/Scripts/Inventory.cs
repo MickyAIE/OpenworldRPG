@@ -30,7 +30,7 @@ public class Inventory : MonoBehaviour
 
     public bool AddItem(Item _item)
     {
-        if (isfull())
+        if (invfull())
             return false;
 
         m_items.Add(_item);
@@ -49,9 +49,8 @@ public class Inventory : MonoBehaviour
     }
 
 
-    public bool isfull()
+    public bool invfull()
     {
         return m_items.Count >= m_itemslot.Length;
     }
-
 }

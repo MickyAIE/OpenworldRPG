@@ -8,8 +8,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 67d47df04e1bb124a9b5bf9d663952fa, type: 3}
   m_Name: Necklace
-  m_EditorClassIdentifier: Assembly-CSharp::Item
-  m_itemname: 
+  m_EditorClassIdentifier: 
+  m_itemname: Necklace of Stats
   m_icon: {fileID: 0}
+  m_strbonus: 0
+  m_agibonus: 0
+  m_intbonus: 0
+  m_vitbonus: 0
+  m_strperbonus: 10
+  m_agiperbonus: 10
+  m_intperbonus: 10
+  m_vitperbonus: 10
+  m_types: 1

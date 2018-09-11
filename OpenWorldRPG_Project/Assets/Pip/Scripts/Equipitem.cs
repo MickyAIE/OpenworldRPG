@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public enum EquipmentType
+public enum Types
 {
     Head,
     Neck,
@@ -26,10 +26,7 @@ public class Equipitem : Item
     public float m_agiperbonus;
     public float m_intperbonus;
     public float m_vitperbonus;
-
-
-
-
-
+    [Space]
+    public Types m_types;
 
 }
