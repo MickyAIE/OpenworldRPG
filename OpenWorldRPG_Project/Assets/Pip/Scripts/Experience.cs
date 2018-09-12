@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-
+/*
 public class Experience : MonoBehaviour
 
 {
@@ -56,4 +56,4 @@ public class Experience : MonoBehaviour
         requiredExperienceText.text = "/" + requiredExperience;
     }
 }
-
+*/

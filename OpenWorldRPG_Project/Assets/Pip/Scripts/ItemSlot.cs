@@ -1,9 +1,13 @@
-﻿using UnityEngine.UI;
+﻿using System;
+using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class ItemSlot : MonoBehaviour
+public class ItemSlot : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] Image m_image;
+
+    public event Action<Item> m_rightclick;
 
     private Item pip_item;
     public Item m_item
@@ -24,6 +28,15 @@ public class ItemSlot : MonoBehaviour
                 m_image.sprite = pip_item.m_icon;
                 m_image.enabled = true;
             }
+        }
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        if (eventData != null && eventData.button == PointerEventData.InputButton.Right)
+        {
+            if (m_item != null && m_rightclick != null)
+                m_rightclick(m_item);
         }
     }
 

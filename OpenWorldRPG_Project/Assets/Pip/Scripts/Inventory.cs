@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
@@ -6,6 +7,20 @@ public class Inventory : MonoBehaviour
     [SerializeField] List<Item> m_items;
     [SerializeField] Transform m_itempos;
     [SerializeField] ItemSlot[] m_itemslot;
+
+    public event Action<Item> m_rightclickactive;
+
+
+
+    private void Awake()
+    {
+        for(int i = 0; i < m_itemslot.Length; i++)
+        {
+            m_itemslot[i].m_rightclick += m_rightclickactive;
+        }
+    }
+
+
 
     private void OnValidate()
     {

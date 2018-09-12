@@ -11,14 +11,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67d47df04e1bb124a9b5bf9d663952fa, type: 3}
   m_Name: Legs
   m_EditorClassIdentifier: 
-  m_itemname: Iron Leggings
-  m_icon: {fileID: 0}
+  m_itemname: Legs
+  m_icon: {fileID: 21300000, guid: 45eaaf0c89f40a145b9e6e7a78910ddb, type: 3}
   m_strbonus: 0
   m_agibonus: 0
-  m_intbonus: 10
-  m_vitbonus: 0
+  m_intbonus: 5
+  m_vitbonus: 5
   m_strperbonus: 0
   m_agiperbonus: 0
-  m_intperbonus: 10
+  m_intperbonus: 0
   m_vitperbonus: 0
-  m_types: 6
+  m_equiptypes: 6

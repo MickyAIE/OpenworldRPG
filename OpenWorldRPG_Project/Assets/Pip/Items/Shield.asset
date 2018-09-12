@@ -11,14 +11,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67d47df04e1bb124a9b5bf9d663952fa, type: 3}
   m_Name: Shield
   m_EditorClassIdentifier: 
-  m_itemname: Tower Shield
-  m_icon: {fileID: 0}
-  m_strbonus: 25
+  m_itemname: Shield
+  m_icon: {fileID: 21300000, guid: ccbc07e8e94e5544e9bfc92166bdf679, type: 3}
+  m_strbonus: 0
   m_agibonus: 0
   m_intbonus: 0
-  m_vitbonus: 25
+  m_vitbonus: 15
   m_strperbonus: 0
   m_agiperbonus: 0
   m_intperbonus: 0
   m_vitperbonus: 0
-  m_types: 5
+  m_equiptypes: 5

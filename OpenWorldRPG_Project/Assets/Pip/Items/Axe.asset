@@ -9,16 +9,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67d47df04e1bb124a9b5bf9d663952fa, type: 3}
-  m_Name: Weapon
+  m_Name: Axe
   m_EditorClassIdentifier: 
-  m_itemname: Sword?
-  m_icon: {fileID: 0}
-  m_strbonus: 0
+  m_itemname: Axe
+  m_icon: {fileID: 21300000, guid: f6f9ac8b2a2c61a44a29cbb62b193ebc, type: 3}
+  m_strbonus: 3
   m_agibonus: 0
   m_intbonus: 0
   m_vitbonus: 0
-  m_strperbonus: 5
+  m_strperbonus: 0
   m_agiperbonus: 0
   m_intperbonus: 0
   m_vitperbonus: 0
-  m_types: 4
+  m_equiptypes: 4
