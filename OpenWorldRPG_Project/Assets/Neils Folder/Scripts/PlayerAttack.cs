@@ -45,8 +45,8 @@ public class PlayerAttack : MonoBehaviour {
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            Debug.Log("mouse 0");
-            Debug.Log("HitBox enabled");
+            //Debug.Log("mouse 0");
+            //Debug.Log("HitBox enabled");
 
             hitBox.enabled = true;
 
@@ -62,14 +62,14 @@ public class PlayerAttack : MonoBehaviour {
         weaponHitBox.enabled = false;
 
         hitBox.enabled = false;
-        Debug.Log("HitBox disabled");
+        //Debug.Log("HitBox disabled");
     }
 
     void Block()
     {
         if (Input.GetButtonDown("Fire2") && shieldEquipped == true)
         {
-            Debug.Log("mouse 1");
+            //Debug.Log("mouse 1");
             animator.SetBool("shieldBlocking", true);
             blocking = true;
 
@@ -77,7 +77,7 @@ public class PlayerAttack : MonoBehaviour {
         }
         if (Input.GetButtonDown("Fire2") && shieldEquipped == false)
         {
-            Debug.Log("mouse 1");
+            //Debug.Log("mouse 1");
             animator.SetBool("blocking", true);
             blocking = true;
 
@@ -85,7 +85,7 @@ public class PlayerAttack : MonoBehaviour {
         }
         if (Input.GetButtonUp("Fire2"))
         {
-            Debug.Log("mouse 1 up");
+            //Debug.Log("mouse 1 up");
 
             animator.SetBool("blocking", false);
             blocking = false;
@@ -94,7 +94,7 @@ public class PlayerAttack : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag.Equals("Enemy"))  // Enemy Tag
+        if (other.gameObject.tag.Equals("DamageReciever"))  // Enemy Tag
         {
             weaponHitBox.enabled = false;
         }

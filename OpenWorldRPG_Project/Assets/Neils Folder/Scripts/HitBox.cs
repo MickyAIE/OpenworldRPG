@@ -11,12 +11,16 @@ public class HitBox : MonoBehaviour {
 
     public int damage = 20;
 
+    private bool sendDamage;
+
     bool warnMeOnce;
 
     void Start () {
         hitBox = GetComponentInChildren<BoxCollider>();
 
         hitBox.enabled = false;
+
+        sendDamage = false;
 
         warnMeOnce = true;
     }
@@ -49,6 +53,7 @@ public class HitBox : MonoBehaviour {
             if (other.gameObject.tag.Equals("DamageReciever"))
             {
                 hitBox.enabled = false;
+                sendDamage = true;
 
                 Debug.Log("Do damage to enemy");
                 Damage(boxes.transform);
@@ -60,10 +65,12 @@ public class HitBox : MonoBehaviour {
     {
         EnemyHealth enemyHealth = enemy.GetComponent<EnemyHealth>();
 
-        if (enemyHealth != null)
+        if (enemyHealth != null && sendDamage == true)
         {
             enemyHealth.Takedamage(damage, hitPoint);
             Debug.Log("Enemy " + eTarget.name + "should be taking " + enemyHealth.m_health + " damage");
+
+            sendDamage = false;
         }
     }
 }

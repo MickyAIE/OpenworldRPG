@@ -103,7 +103,7 @@ public class EnemyHealth : MonoBehaviour
         m_healthbar = (Screen.width / 8) * (m_currenthealth / (float)m_health);
     }
 
-    void Death()
+    public void Death()
     {
         m_dead = true;
         m_capsule.isTrigger = true;

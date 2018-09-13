@@ -10,7 +10,7 @@ public class CombatSwitch : MonoBehaviour {
     public Animator animator;
 
     public bool attack;
-    public bool shoot;
+    //public bool shoot;
     public bool spell;
     public bool unarmed;
 
@@ -20,7 +20,7 @@ public class CombatSwitch : MonoBehaviour {
         animator = GetComponent<Animator>();
 
         attack = false;
-        shoot = false;
+        //shoot = false;
         spell = false;
         unarmed = true;
 
@@ -34,14 +34,14 @@ public class CombatSwitch : MonoBehaviour {
         {
             Debug.LogError("Player Attack script missing");
         }
-        if (playerShoot != null)
+        /*if (playerShoot != null)
         {
             playerShoot.enabled = false;
         }
         else
         {
             Debug.LogError("Player Shoot script missing");
-        }
+        }*/
         if (playerSpells != null)
         {
             playerSpells.enabled = false;
@@ -78,18 +78,18 @@ public class CombatSwitch : MonoBehaviour {
             else if(attack == true)
             {
                 attack = false;
-                shoot = true;
+                spell = true;
                 animator.SetBool("changingWeapon", true);
                 animator.SetBool("inCombat", true);
             }
 
-            else if (shoot == true)
+            /*else if (shoot == true)
             {
                 shoot = false;
                 spell = true;
                 animator.SetBool("changingWeapon", true);
                 animator.SetBool("inCombat", true);
-            }
+            }*/
 
             else if(spell == true)
             {
@@ -109,7 +109,7 @@ public class CombatSwitch : MonoBehaviour {
         if(unarmed)
         {
             attack = false;
-            shoot = false;
+            //shoot = false;
             spell = false;
             unarmed = true;
 
@@ -127,7 +127,7 @@ public class CombatSwitch : MonoBehaviour {
         }
         if(attack)
         {
-            shoot = false;
+            //shoot = false;
             spell = false;
             unarmed = false;
             attack = true;
@@ -144,7 +144,7 @@ public class CombatSwitch : MonoBehaviour {
 
             animator.SetBool("changingWeapon", false);
         }
-        if(shoot)
+        /*if(shoot)
         {
             attack = false;
             spell = false;
@@ -162,11 +162,11 @@ public class CombatSwitch : MonoBehaviour {
             animator.SetBool("rangedEquipped", true);
 
             animator.SetBool("changingWeapon", false);
-        }
+        }*/
         if(spell)
         {
             attack = false;
-            shoot = false;
+            //shoot = false;
             unarmed = false;
             spell = true;
 
