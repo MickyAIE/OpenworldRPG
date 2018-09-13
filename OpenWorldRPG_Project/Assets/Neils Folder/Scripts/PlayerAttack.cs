@@ -7,6 +7,7 @@ public class PlayerAttack : MonoBehaviour {
     public Animator animator;
     public HitBox weaponHitBox;
     public AnimationEvent animationEvent;
+    public BoxCollider hitBox;
 
     public bool shieldEquipped = false;
     public bool blocking = false;
@@ -15,12 +16,14 @@ public class PlayerAttack : MonoBehaviour {
     {
         animator = GetComponent<Animator>();
 
+        hitBox.enabled = false;
+
         weaponHitBox.enabled = false;
 
         shieldEquipped = false;
         blocking = false;
 
-}
+    }
 
     private void Update()
     {
@@ -45,6 +48,8 @@ public class PlayerAttack : MonoBehaviour {
             Debug.Log("mouse 0");
             Debug.Log("HitBox enabled");
 
+            hitBox.enabled = true;
+
             weaponHitBox.enabled = true;
             animator.SetBool("meleeAttack", true);
         }
@@ -52,9 +57,11 @@ public class PlayerAttack : MonoBehaviour {
 
     public void HitBoxDisable(string HitBoxDisable) 
     {
-        weaponHitBox.enabled = false;
         animator.SetBool("meleeAttack", false);
 
+        weaponHitBox.enabled = false;
+
+        hitBox.enabled = false;
         Debug.Log("HitBox disabled");
     }
 
@@ -87,7 +94,7 @@ public class PlayerAttack : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag.Equals("Enemy"))  // Enenmy Tag
+        if (other.gameObject.tag.Equals("Enemy"))  // Enemy Tag
         {
             weaponHitBox.enabled = false;
         }
