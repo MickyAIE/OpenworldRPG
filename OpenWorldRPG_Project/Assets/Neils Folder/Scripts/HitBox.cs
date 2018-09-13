@@ -16,6 +16,8 @@ public class HitBox : MonoBehaviour {
     void Start () {
         hitBox = GetComponentInChildren<BoxCollider>();
 
+        hitBox.enabled = false;
+
         warnMeOnce = true;
     }
 	
@@ -44,8 +46,11 @@ public class HitBox : MonoBehaviour {
 
         foreach(Collider boxes in colliders)
         {
-            if (other.gameObject.tag.Equals("Enemy"))
+            if (other.gameObject.tag.Equals("DamageReciever"))
             {
+                hitBox.enabled = false;
+
+                Debug.Log("Do damage to enemy");
                 Damage(boxes.transform);
             }
         }
