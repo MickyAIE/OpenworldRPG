@@ -27,7 +27,7 @@ public class Panel : MonoBehaviour
     {
         for(int i = 0; i < m_equippos.Length; i++)
         {
-            if (m_equippos[i].m_equiptypes == _item.m_equiptypes)
+            if (m_equippos[i].m_equipitem == _item)            // WHY! JUST PARSE GODDAMNIT
             {
                 previous = (Equipitem)m_equippos[i].m_item;
                 m_equippos[i].m_item = _item;
