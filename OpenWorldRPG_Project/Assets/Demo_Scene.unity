@@ -11919,11 +11919,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4467476537881200, guid: 6230b1fb2ef9b944f99d53e2cff1e133, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.007
+      value: 0.032
       objectReference: {fileID: 0}
     - target: {fileID: 4467476537881200, guid: 6230b1fb2ef9b944f99d53e2cff1e133, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.636
+      value: 1.527
       objectReference: {fileID: 0}
     - target: {fileID: 54201677148462874, guid: 6230b1fb2ef9b944f99d53e2cff1e133,
         type: 2}
@@ -18375,7 +18375,6 @@ GameObject:
   - component: {fileID: 591271987}
   - component: {fileID: 591271986}
   - component: {fileID: 591271985}
-  - component: {fileID: 591271984}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -18397,20 +18396,6 @@ Transform:
   m_Father: {fileID: 705492885}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &591271984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114787045294644428, guid: 0177181cf6298cf4bab839386e8b8822,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 591271982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5566807d11c0a2c40accf35e98bb2806, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sensetivity: 2
-  smoothing: 2
 --- !u!81 &591271985
 AudioListener:
   m_ObjectHideFlags: 0
@@ -63415,6 +63400,24 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2126374492}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2126936287 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1227957584875746, guid: 6230b1fb2ef9b944f99d53e2cff1e133,
+    type: 2}
+  m_PrefabInternal: {fileID: 390414767}
+--- !u!114 &2126936292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2126936287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5566807d11c0a2c40accf35e98bb2806, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sensetivity: 2
+  smoothing: 2
 --- !u!1 &2127425773 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 133646, guid: 138f01e248f319c4388a7199ae4e3eae, type: 2}
