@@ -10,7 +10,7 @@ public class Character : MonoBehaviour
     public Characterstats m_vitality;
 
     [SerializeField] Inventory m_inventory;
-    [SerializeField] Panel m_panel;
+    [SerializeField] EquipPanel m_panel;
     [SerializeField] Statpanel m_statpanel;
 
     private void Awake()
@@ -49,7 +49,11 @@ public class Character : MonoBehaviour
                 if (previous != null)
                 {
                     m_inventory.AddItem(previous);
+                    previous.Unequiped(this);
+                    m_statpanel.UpdatedValue();
                 }
+                item.Equiped(this);
+                m_statpanel.UpdatedValue();
             }
             else
             {
@@ -62,6 +66,8 @@ public class Character : MonoBehaviour
     {
         if (!m_inventory.invfull() && m_panel.Itemremove(item))
         {
+            item.Unequiped(this);
+            m_statpanel.UpdatedValue();
             m_inventory.AddItem(item);
         }
     }

@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-public class Panel : MonoBehaviour
+public class EquipPanel : MonoBehaviour
 {
     [SerializeField] Transform m_slotparents;
     [SerializeField] Equipslot[] m_equippos;
@@ -27,7 +27,7 @@ public class Panel : MonoBehaviour
     {
         for(int i = 0; i < m_equippos.Length; i++)
         {
-            if (m_equippos[i].m_equipitem == _item)            // WHY! JUST PARSE GODDAMNIT
+            if (m_equippos[i].m_equipitem.m_type == _item.m_type)            
             {
                 previous = (Equipitem)m_equippos[i].m_item;
                 m_equippos[i].m_item = _item;

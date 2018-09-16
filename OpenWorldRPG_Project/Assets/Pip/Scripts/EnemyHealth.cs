@@ -29,7 +29,6 @@ public class EnemyHealth : MonoBehaviour
     ParticleSystem m_particle;               // Ref to particle system
 
 
-
     bool m_falling;                          // Play a animation for the enemy to disappear
     bool m_dead;                             // You know, just to make sure they are dead
 
@@ -62,13 +61,12 @@ public class EnemyHealth : MonoBehaviour
     }
 
 
-    public void Takedamage(int amount, Vector3 hitPoint)
+    public void Takedamage(int amount)
     {
         if (m_dead)
             return;
 
         m_health -= amount;
-        m_particle.transform.position = hitPoint;
         m_particle.Play();
         m_enemysounds.clip = m_damagesound;
 
@@ -103,7 +101,7 @@ public class EnemyHealth : MonoBehaviour
         m_healthbar = (Screen.width / 8) * (m_currenthealth / (float)m_health);
     }
 
-    public void Death()
+    void Death()
     {
         m_dead = true;
         m_capsule.isTrigger = true;

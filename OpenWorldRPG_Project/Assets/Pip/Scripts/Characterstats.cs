@@ -8,4 +8,6 @@ public class Characterstats : MonoBehaviour
     public Stats Agility;
     public Stats Intelligence;
     public Stats Vitality;
+
+
 }

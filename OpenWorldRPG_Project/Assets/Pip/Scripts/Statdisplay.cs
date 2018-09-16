@@ -15,4 +15,9 @@ public class Statdisplay : MonoBehaviour
         m_name = texts[0];
         m_value = texts[1];
     }
+
+    public void UpdateStatValue()
+    {
+        Debug.Log("Hello");
+    }
 }

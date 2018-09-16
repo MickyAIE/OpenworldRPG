@@ -11,12 +11,13 @@ public enum Modtostats
 
 public class StatModify
 {
+
     public readonly float m_value;
     public readonly Modtostats m_type;
     public readonly int m_order;
     public readonly object m_source;
 
-    public StatModify(float m_values, Modtostats m_types, int m_orders, object m_sources = null)                                           
+    public StatModify(float m_values, Modtostats m_types, int m_orders, object m_sources)                                           
     {
         m_value = m_values;
         m_type = m_types;
