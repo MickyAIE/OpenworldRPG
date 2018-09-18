@@ -12181,16 +12181,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4467476537881200, guid: 6230b1fb2ef9b944f99d53e2cff1e133, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.007
+      value: 0.088
       objectReference: {fileID: 0}
     - target: {fileID: 4467476537881200, guid: 6230b1fb2ef9b944f99d53e2cff1e133, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.636
+      value: 1.667
       objectReference: {fileID: 0}
     - target: {fileID: 54201677148462874, guid: 6230b1fb2ef9b944f99d53e2cff1e133,
         type: 2}
       propertyPath: m_Constraints
-      value: 80
+      value: 112
       objectReference: {fileID: 0}
     - target: {fileID: 114908229560637144, guid: 6230b1fb2ef9b944f99d53e2cff1e133,
         type: 2}
@@ -12201,6 +12201,21 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114320813557098336, guid: 6230b1fb2ef9b944f99d53e2cff1e133,
+        type: 2}
+      propertyPath: hitBox
+      value: 
+      objectReference: {fileID: 390414770}
+    - target: {fileID: 114277622080300006, guid: 6230b1fb2ef9b944f99d53e2cff1e133,
+        type: 2}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 390414772}
+    - target: {fileID: 114277622080300006, guid: 6230b1fb2ef9b944f99d53e2cff1e133,
+        type: 2}
+      propertyPath: weapon
+      value: 
+      objectReference: {fileID: 390414771}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6230b1fb2ef9b944f99d53e2cff1e133, type: 2}
   m_IsPrefabParent: 0
@@ -12222,6 +12237,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sensetivity: 2
   smoothing: 2
+--- !u!65 &390414770 stripped
+BoxCollider:
+  m_PrefabParentObject: {fileID: 65126572434903512, guid: 6230b1fb2ef9b944f99d53e2cff1e133,
+    type: 2}
+  m_PrefabInternal: {fileID: 390414767}
+--- !u!1 &390414771 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1819643706576874, guid: 6230b1fb2ef9b944f99d53e2cff1e133,
+    type: 2}
+  m_PrefabInternal: {fileID: 390414767}
+--- !u!95 &390414772 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 95582506857695224, guid: 6230b1fb2ef9b944f99d53e2cff1e133,
+    type: 2}
+  m_PrefabInternal: {fileID: 390414767}
 --- !u!1 &392321583
 GameObject:
   m_ObjectHideFlags: 0
@@ -22356,9 +22386,8 @@ MonoBehaviour:
   playerSpells: {fileID: 705492880}
   animator: {fileID: 705492884}
   attack: 0
-  shoot: 0
-  spell: 0
   unarmed: 0
+  weapon: {fileID: 0}
 --- !u!114 &705492878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22372,6 +22401,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 705492884}
   weaponHitBox: {fileID: 705492886}
+  hitBox: {fileID: 0}
   shieldEquipped: 0
   blocking: 0
 --- !u!114 &705492879
