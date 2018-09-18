@@ -29,8 +29,11 @@ public class Dialogue : MonoBehaviour {
         if (sentnum >= sentences.Length)
         {
             DialogueOb.SetActive(false);
-           
+            GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>().enabled = true;
+
         }
+
+        
     }
 
     IEnumerator Type()

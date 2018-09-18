@@ -10,6 +10,7 @@ public class testNpcDialogue : MonoBehaviour {
     public GameObject Dialogue;
     public GameObject Interact;
     public bool interacted;
+    private bool isCol;
 
 
 
@@ -20,6 +21,7 @@ public class testNpcDialogue : MonoBehaviour {
         npcanim.SetBool("IsTalking", false);
         interactable = false;
         interacted = false;
+        isCol = false;
 	}
 
     private void Update()
@@ -36,6 +38,8 @@ public class testNpcDialogue : MonoBehaviour {
             npcanim.SetBool("IsIdle", false);
             npcanim.SetBool("IsWaving", false);
             npcanim.SetBool("IsTalking", true);
+            GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>().enabled = false;
+            
         }
     }
 
@@ -46,13 +50,23 @@ public class testNpcDialogue : MonoBehaviour {
             npcanim.SetBool("IsIdle", true);
             npcanim.SetBool("IsWaving", false);
             npcanim.SetBool("IsTalking", false);
+            isCol = true;
         }
         else
             return;
         if (interacted == false)
         {
             interactable = true;
+            
+        }
+    }
+
+    private void OnMouseOver()
+    {
+        if(interactable == true && isCol == true)
+        {
             Interact.SetActive(true);
+           
         }
     }
 
