@@ -39,7 +39,7 @@ public class Statpanel : MonoBehaviour
     {
         for(int i = 0; i < m_stats.Length; i++)
         {
-            m_display[i].m_value.text = m_stats[i].ToString();
+            m_display[i].UpdateStatValue();
         }
     }
 

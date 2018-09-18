@@ -13,7 +13,7 @@ public class Character : MonoBehaviour
     [SerializeField] EquipPanel m_panel;
     [SerializeField] Statpanel m_statpanel;
 
-    private void Awake()
+    private void Start()
     {
         m_statpanel.SetStats(m_strength, m_agility, m_intelligence, m_vitality);
         m_statpanel.UpdatedValue();
