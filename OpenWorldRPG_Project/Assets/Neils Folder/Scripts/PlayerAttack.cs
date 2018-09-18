@@ -13,6 +13,8 @@ public class PlayerAttack : MonoBehaviour {
     public bool blocking = false;
     private int amount;
 
+    public GameObject weapon;
+
     void Start ()
     {
         animator = GetComponent<Animator>();
@@ -23,6 +25,8 @@ public class PlayerAttack : MonoBehaviour {
 
         shieldEquipped = false;
         blocking = false;
+
+        weapon.SetActive(true);
 
     }
 
