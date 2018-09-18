@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerSpells : MonoBehaviour {
 
-    public Animator animator;
+ /*   public Animator animator;
     public AnimationEvent animationEvent;
 
     public GameObject weapon;
@@ -13,10 +13,11 @@ public class PlayerSpells : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-
         animator = GetComponent<Animator>();
 
         weapon.SetActive(false);
+
+
     }
 	
 	// Update is called once per frame
@@ -44,5 +45,5 @@ public class PlayerSpells : MonoBehaviour {
 
         animator.SetBool("magicAttack", false);
 
-    }
+    }*/
 }

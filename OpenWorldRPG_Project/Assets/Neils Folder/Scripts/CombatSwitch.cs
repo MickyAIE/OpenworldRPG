@@ -11,8 +11,10 @@ public class CombatSwitch : MonoBehaviour {
 
     public bool attack;
     //public bool shoot;
-    public bool spell;
+    //public bool spell;
     public bool unarmed;
+
+    public GameObject weapon;
 
     // Use this for initialization
     void Start()
@@ -21,7 +23,7 @@ public class CombatSwitch : MonoBehaviour {
 
         attack = false;
         //shoot = false;
-        spell = false;
+        //spell = false;
         unarmed = true;
 
         animator.SetBool("inCombat", false);
@@ -51,6 +53,8 @@ public class CombatSwitch : MonoBehaviour {
             Debug.LogError("Player Spell script missing");
         }
 
+
+        weapon.SetActive(false);
     }
 
     // Update is called once per frame
@@ -61,11 +65,15 @@ public class CombatSwitch : MonoBehaviour {
             Debug.Log("K pressed");
             unarmed = true;
             animator.SetBool("changingWeapon", true);
+
+            weapon.SetActive(false);
         }
 
         if (Input.GetKeyDown(KeyCode.J))
         {
             Debug.Log("J pressed");
+
+            weapon.SetActive(true);
 
             if (unarmed == true)
             {
@@ -78,7 +86,7 @@ public class CombatSwitch : MonoBehaviour {
             else if(attack == true)
             {
                 attack = false;
-                spell = true;
+                unarmed = true;
                 animator.SetBool("changingWeapon", true);
                 animator.SetBool("inCombat", true);
             }
@@ -89,7 +97,7 @@ public class CombatSwitch : MonoBehaviour {
                 spell = true;
                 animator.SetBool("changingWeapon", true);
                 animator.SetBool("inCombat", true);
-            }*/
+            }
 
             else if(spell == true)
             {
@@ -98,6 +106,7 @@ public class CombatSwitch : MonoBehaviour {
                 animator.SetBool("changingWeapon", true);
                 animator.SetBool("inCombat", true);
             }
+            */
         }
 
         ChangeWeapon();
@@ -110,7 +119,7 @@ public class CombatSwitch : MonoBehaviour {
         {
             attack = false;
             //shoot = false;
-            spell = false;
+            //spell = false;
             unarmed = true;
 
             playerAttack.enabled = false;
@@ -128,7 +137,7 @@ public class CombatSwitch : MonoBehaviour {
         if(attack)
         {
             //shoot = false;
-            spell = false;
+            //spell = false;
             unarmed = false;
             attack = true;
 
@@ -162,7 +171,7 @@ public class CombatSwitch : MonoBehaviour {
             animator.SetBool("rangedEquipped", true);
 
             animator.SetBool("changingWeapon", false);
-        }*/
+        }
         if(spell)
         {
             attack = false;
@@ -182,6 +191,7 @@ public class CombatSwitch : MonoBehaviour {
 
             animator.SetBool("changingWeapon", false);
         }
+        */
     }
 
 }
