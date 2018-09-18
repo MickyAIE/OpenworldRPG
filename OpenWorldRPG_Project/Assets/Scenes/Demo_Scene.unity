@@ -40478,6 +40478,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 9c1b707b80c272f42b8f152b1ca7b827, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3c867657750bf55449ee7db0828f724b, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9c1b707b80c272f42b8f152b1ca7b827, type: 3}
   m_IsPrefabParent: 0
@@ -64977,6 +64981,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_moveSpeed: 10
   m_targetDistance: 20
+  anim: {fileID: 0}
   Player: {fileID: 1755951185}
 --- !u!135 &1604455104
 SphereCollider:

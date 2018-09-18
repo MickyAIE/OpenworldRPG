@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Health : MonoBehaviour
@@ -36,10 +37,10 @@ public class Health : MonoBehaviour
     AudioSource m_audio;                                            // Audio component
     public AudioClip ourdeathclip;                                  // Our death sound
     public AudioClip ourmanafail;                                   // Failed mana sound\
-    // Playermovement m_playermovement;                             // Reference to the movement
+                                                                    // Playermovement m_playermovement;                             // Reference to the movement
 
-    
-
+    public Text playerDead;
+    private bool playerIsDead = false;
 
 
     private void Awake()
@@ -51,6 +52,9 @@ public class Health : MonoBehaviour
         our_currenthealth = our_health;
         our_currentmana = our_mana;
         our_currentexp = our_exp;
+
+        Time.timeScale = 1;
+        playerIsDead = false;
     }
 
 
@@ -65,6 +69,20 @@ public class Health : MonoBehaviour
             our_damageimage.color = Color.Lerp(our_damageimage.color, Color.clear, our_damagespeed * Time.deltaTime);
         }
         our_damage = false;
+
+        if(playerIsDead == true)
+        {
+            if(Input.GetKeyDown(KeyCode.KeypadEnter))
+            {
+                SceneManager.LoadScene("Main Level");
+                playerIsDead = false;
+            }
+            if(Input.GetKeyDown(KeyCode.Escape))
+            {
+                SceneManager.LoadScene("Main Menu");
+                playerIsDead = false;
+            }
+        }
     }
 
     public void TakeDamage (int m_amount)
@@ -97,6 +115,11 @@ public class Health : MonoBehaviour
         m_anim.SetTrigger("Dead");
         m_audio.clip = ourdeathclip;
         m_audio.Play();
+
+        playerDead.text = ("You Died! Press Enter to restart. Press Esc to Quit.");
+        Time.timeScale = 0;
+
+        playerIsDead = true;
 
         //m_playermovement.enabled = false
     }

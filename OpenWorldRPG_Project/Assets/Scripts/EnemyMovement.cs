@@ -18,6 +18,8 @@ public class EnemyMovement : MonoBehaviour {
 
     private bool m_EnemyFollow;
 
+    public Animator anim;
+
     float m_playerPosition; //might not need yet, could be useful if tracking two players and finding closest 
     float m_playerDistance;
     GameObject m_Player;
@@ -35,27 +37,35 @@ public class EnemyMovement : MonoBehaviour {
 
         m_EnemyNav = GetComponent<NavMeshAgent>();
         m_EnemyFollow = false;
+
+        anim = GetComponent<Animator>();
     }
 	
 	// Update is called once per frame
 	void Update ()
     {
+
+        anim.SetBool("IsIdle", true);
         //m_playerPosition = new Vector3  (Player.transform);
         //Player.transform.position = new Vector3(playerposition);
-        
+
 
         float m_PlayerDistance = (m_Player.transform.position - transform.position).magnitude; //use the player distance to see if player is in range
-        float m_AtPlayer = 0.2f;
+        float m_AtPlayer = 5.5f;
 
         if(m_PlayerDistance > m_AtPlayer)
         {
             m_EnemyNav.SetDestination(m_Player.transform.position);
             m_EnemyNav.isStopped = false;
+            anim.SetBool("IsIdle", false);
+            anim.SetBool("IsWalk", true);
         }
         else
         {
             m_EnemyNav.isStopped = true;
             m_moveSpeed = 0;
+            anim.SetBool("IsIdle", true);
+            anim.SetBool("IsWalk", false);
         }
 
         //m_playerDistance = m_playerPosition - m_enemyPosition;
