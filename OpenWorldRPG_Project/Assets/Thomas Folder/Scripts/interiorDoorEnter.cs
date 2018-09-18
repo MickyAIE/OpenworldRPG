@@ -9,6 +9,7 @@ public class interiorDoorEnter : MonoBehaviour {
     public playerController controller;
     public GameObject EnterText;
     private bool EnterPress;
+    private bool isCol;
 
 
 
@@ -17,6 +18,7 @@ public class interiorDoorEnter : MonoBehaviour {
 	void Start () {
         GameObject p = GameObject.FindGameObjectWithTag("Player");
         controller = p.GetComponent<playerController>();
+        isCol = false;
 	}
 	
 	// Update is called once per frame
@@ -31,10 +33,24 @@ public class interiorDoorEnter : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        EnterText.SetActive(true);
+        
         if(other.tag == ("Player") && controller.canEnter == true )
         {
+            isCol = true;
+            
+        }
+    }
+
+    private void OnMouseOver()
+    {
+        if(isCol == true)
+        {
+            EnterText.SetActive(true);
             EnterPress = true;
+        }
+        else
+        {
+            EnterText.SetActive(false);
         }
     }
 
