@@ -38,7 +38,7 @@ public class Stats
         m_base = m_basing;
     }
 
-    public virtual void addmod(StatModify mod)
+    public virtual void AddMod(StatModify mod)
     {
         isntfull = true;
         m_statmods.Add(mod);
