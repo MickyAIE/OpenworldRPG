@@ -55,6 +55,7 @@ public class Health : MonoBehaviour
 
         Time.timeScale = 1;
         playerIsDead = false;
+        playerDead.text = ("");
     }
 
 
@@ -76,11 +77,13 @@ public class Health : MonoBehaviour
             {
                 SceneManager.LoadScene("Main Level");
                 playerIsDead = false;
+                playerDead.text = ("");
             }
             if(Input.GetKeyDown(KeyCode.Escape))
             {
                 SceneManager.LoadScene("Main Menu");
                 playerIsDead = false;
+                playerDead.text = ("");
             }
         }
     }

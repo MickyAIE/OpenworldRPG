@@ -18,8 +18,8 @@ public class Controls : MonoBehaviour {
         controls.enabled = false;
 
         pause.text = ("");
-        controls.text = ("");
-        pressPause.text = ("Press Enter for controls");
+        pressPause.text = ("Press T for controls");
+        paused = false;
 
 	}
 	
@@ -33,33 +33,25 @@ public class Controls : MonoBehaviour {
 
     void Paused()
     {
-        if (paused == false && Input.GetKeyDown(KeyCode.KeypadEnter))
+        if (paused == false && Input.GetKeyUp(KeyCode.T))
         {
+            controls.enabled = true;
+            pause.enabled = true;
             Time.timeScale = 0;
 
             pause.text = ("PAUSED");
-            controls.text = ("W A S D to move" +
-                "F to interact" +
-                "J to equip weapon" +
-                "K to unequip Weapon" +
-                "Mouse to Look around" +
-                "Space to jump" +
-                "Shift to run" +
-                "Left click to attack" +
-                "Right click to block" +
-                "I to open inventory" +
-                "Esc to exit");
-            pressPause.text = ("Press Enter to exit menu");
+            pressPause.text = ("Press Esc to exit menu");
             paused = true;
 
         }
-        if (paused == true && Input.GetKeyDown(KeyCode.KeypadEnter))
+        if (paused == true && Input.GetKeyDown(KeyCode.Escape))
         {
             Time.timeScale = 1;
+            controls.enabled = false;
+            pause.enabled = false;
 
             pause.text = ("");
-            controls.text = ("");
-            pressPause.text = ("Press Enter for controls");
+            pressPause.text = ("Press T for controls");
 
             paused = false;
         }
