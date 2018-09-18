@@ -1866,7 +1866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_moveSpeed: 10
-  m_targetDistance: 20
+  m_targetDistance: 5
   Player: {fileID: 1753590553}
 --- !u!65 &585683801
 BoxCollider:
@@ -5110,7 +5110,6 @@ MonoBehaviour:
   playerSpells: {fileID: 1753590549}
   animator: {fileID: 0}
   attack: 0
-  shoot: 0
   spell: 0
   unarmed: 0
 --- !u!114 &1753590547
