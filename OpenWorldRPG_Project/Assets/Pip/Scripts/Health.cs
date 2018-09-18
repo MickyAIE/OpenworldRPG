@@ -75,7 +75,7 @@ public class Health : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.KeypadEnter))
             {
-                SceneManager.LoadScene("Main Level");
+                SceneManager.LoadScene("Demo_Scene");
                 playerIsDead = false;
                 playerDead.text = ("");
             }
