@@ -4814,6 +4814,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!95 &107284305 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: 9c1b707b80c272f42b8f152b1ca7b827,
+    type: 3}
+  m_PrefabInternal: {fileID: 556219457}
 --- !u!1001 &107832023
 Prefab:
   m_ObjectHideFlags: 0
@@ -7338,7 +7343,7 @@ MonoBehaviour:
   m_deathclip: {fileID: 8300000, guid: ede829d5c3516784a8f04201b6954e8f, type: 3}
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
-  m_anim: {fileID: 0}
+  m_anim: {fileID: 1452484309}
 --- !u!136 &170113780
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10141,7 +10146,7 @@ MonoBehaviour:
   m_deathclip: {fileID: 8300000, guid: ede829d5c3516784a8f04201b6954e8f, type: 3}
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
-  m_anim: {fileID: 0}
+  m_anim: {fileID: 1072543669}
 --- !u!136 &237885076
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -15115,7 +15120,7 @@ MonoBehaviour:
   m_deathclip: {fileID: 8300000, guid: ede829d5c3516784a8f04201b6954e8f, type: 3}
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
-  m_anim: {fileID: 0}
+  m_anim: {fileID: 107284305}
 --- !u!136 &379170617
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -17566,6 +17571,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!95 &433384878 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: 9c1b707b80c272f42b8f152b1ca7b827,
+    type: 3}
+  m_PrefabInternal: {fileID: 870314461}
 --- !u!1001 &433885599
 Prefab:
   m_ObjectHideFlags: 0
@@ -22279,6 +22289,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!95 &537027533 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: 9c1b707b80c272f42b8f152b1ca7b827,
+    type: 3}
+  m_PrefabInternal: {fileID: 2041433473}
 --- !u!1001 &537294762
 Prefab:
   m_ObjectHideFlags: 0
@@ -23163,7 +23178,7 @@ MonoBehaviour:
   m_deathclip: {fileID: 8300000, guid: ede829d5c3516784a8f04201b6954e8f, type: 3}
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
-  m_anim: {fileID: 0}
+  m_anim: {fileID: 1742125167}
 --- !u!136 &545159303
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -24296,7 +24311,7 @@ MonoBehaviour:
   m_deathclip: {fileID: 8300000, guid: ede829d5c3516784a8f04201b6954e8f, type: 3}
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
-  m_anim: {fileID: 0}
+  m_anim: {fileID: 594583403}
 --- !u!136 &569124027
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -25324,7 +25339,7 @@ MonoBehaviour:
   m_deathclip: {fileID: 8300000, guid: ede829d5c3516784a8f04201b6954e8f, type: 3}
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
-  m_anim: {fileID: 0}
+  m_anim: {fileID: 1273673683}
 --- !u!136 &586251202
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -25681,6 +25696,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!95 &594583403 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: 9c1b707b80c272f42b8f152b1ca7b827,
+    type: 3}
+  m_PrefabInternal: {fileID: 638077392}
 --- !u!1001 &595084295
 Prefab:
   m_ObjectHideFlags: 0
@@ -27633,6 +27653,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!95 &632065801 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: 9c1b707b80c272f42b8f152b1ca7b827,
+    type: 3}
+  m_PrefabInternal: {fileID: 186442406}
 --- !u!1 &633657108 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 9c1b707b80c272f42b8f152b1ca7b827, type: 3}
@@ -29818,7 +29843,7 @@ MonoBehaviour:
   m_deathclip: {fileID: 8300000, guid: ede829d5c3516784a8f04201b6954e8f, type: 3}
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
-  m_anim: {fileID: 0}
+  m_anim: {fileID: 2048793028}
 --- !u!136 &670559397
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -32553,7 +32578,7 @@ MonoBehaviour:
   m_deathclip: {fileID: 8300000, guid: ede829d5c3516784a8f04201b6954e8f, type: 3}
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
-  m_anim: {fileID: 0}
+  m_anim: {fileID: 1472347011}
 --- !u!136 &757862292
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -34405,7 +34430,7 @@ MonoBehaviour:
   m_deathclip: {fileID: 8300000, guid: ede829d5c3516784a8f04201b6954e8f, type: 3}
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
-  m_anim: {fileID: 0}
+  m_anim: {fileID: 1865555058}
 --- !u!136 &798603890
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -34858,7 +34883,7 @@ MonoBehaviour:
   m_deathclip: {fileID: 8300000, guid: ede829d5c3516784a8f04201b6954e8f, type: 3}
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
-  m_anim: {fileID: 0}
+  m_anim: {fileID: 852218977}
 --- !u!136 &809023399
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -35222,6 +35247,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!95 &813733252 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: 9c1b707b80c272f42b8f152b1ca7b827,
+    type: 3}
+  m_PrefabInternal: {fileID: 20399215}
 --- !u!1001 &813828392
 Prefab:
   m_ObjectHideFlags: 0
@@ -36311,6 +36341,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!95 &837020227 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: 9c1b707b80c272f42b8f152b1ca7b827,
+    type: 3}
+  m_PrefabInternal: {fileID: 2045635567}
 --- !u!1 &837574461
 GameObject:
   m_ObjectHideFlags: 0
@@ -36360,7 +36395,7 @@ MonoBehaviour:
   m_deathclip: {fileID: 8300000, guid: ede829d5c3516784a8f04201b6954e8f, type: 3}
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
-  m_anim: {fileID: 0}
+  m_anim: {fileID: 881768533}
 --- !u!136 &837574464
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -36811,6 +36846,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!95 &852218977 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: 9c1b707b80c272f42b8f152b1ca7b827,
+    type: 3}
+  m_PrefabInternal: {fileID: 784529285}
 --- !u!1 &853684273 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 112350, guid: a6904f5656dfe8e49bd1fae1497ddf07, type: 2}
@@ -37716,7 +37756,7 @@ MonoBehaviour:
   m_deathclip: {fileID: 8300000, guid: ede829d5c3516784a8f04201b6954e8f, type: 3}
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
-  m_anim: {fileID: 0}
+  m_anim: {fileID: 1565833017}
 --- !u!136 &874558456
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -38038,6 +38078,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!95 &881768533 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: 9c1b707b80c272f42b8f152b1ca7b827,
+    type: 3}
+  m_PrefabInternal: {fileID: 1496886330}
 --- !u!1001 &881977442
 Prefab:
   m_ObjectHideFlags: 0
@@ -46633,6 +46678,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!95 &1072543669 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: 9c1b707b80c272f42b8f152b1ca7b827,
+    type: 3}
+  m_PrefabInternal: {fileID: 213590497}
 --- !u!1001 &1073101883
 Prefab:
   m_ObjectHideFlags: 0
@@ -54842,6 +54892,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!95 &1273673683 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: 9c1b707b80c272f42b8f152b1ca7b827,
+    type: 3}
+  m_PrefabInternal: {fileID: 2067833306}
 --- !u!1 &1274067923 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 106878, guid: d9997adaf286f9b45a050f836bce2f10, type: 2}
@@ -55166,7 +55221,7 @@ MonoBehaviour:
   m_deathclip: {fileID: 8300000, guid: ede829d5c3516784a8f04201b6954e8f, type: 3}
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
-  m_anim: {fileID: 0}
+  m_anim: {fileID: 2063392140}
 --- !u!136 &1282475931
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -55288,7 +55343,7 @@ MonoBehaviour:
   m_deathclip: {fileID: 8300000, guid: ede829d5c3516784a8f04201b6954e8f, type: 3}
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
-  m_anim: {fileID: 0}
+  m_anim: {fileID: 433384878}
 --- !u!136 &1284360051
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -56428,7 +56483,7 @@ MonoBehaviour:
   m_deathclip: {fileID: 8300000, guid: ede829d5c3516784a8f04201b6954e8f, type: 3}
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
-  m_anim: {fileID: 0}
+  m_anim: {fileID: 1396393569}
 --- !u!136 &1301010238
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -56959,7 +57014,7 @@ MonoBehaviour:
   m_deathclip: {fileID: 8300000, guid: ede829d5c3516784a8f04201b6954e8f, type: 3}
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
-  m_anim: {fileID: 0}
+  m_anim: {fileID: 1874161873}
 --- !u!136 &1309792505
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -60024,6 +60079,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!95 &1396393569 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: 9c1b707b80c272f42b8f152b1ca7b827,
+    type: 3}
+  m_PrefabInternal: {fileID: 1361934149}
 --- !u!1001 &1398572983
 Prefab:
   m_ObjectHideFlags: 0
@@ -60343,7 +60403,7 @@ MonoBehaviour:
   m_deathclip: {fileID: 8300000, guid: ede829d5c3516784a8f04201b6954e8f, type: 3}
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
-  m_anim: {fileID: 0}
+  m_anim: {fileID: 813733252}
 --- !u!136 &1401705848
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -60530,7 +60590,7 @@ MonoBehaviour:
   m_deathclip: {fileID: 8300000, guid: ede829d5c3516784a8f04201b6954e8f, type: 3}
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
-  m_anim: {fileID: 0}
+  m_anim: {fileID: 1616483241}
 --- !u!136 &1409174085
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -60614,7 +60674,7 @@ MonoBehaviour:
   m_deathclip: {fileID: 8300000, guid: ede829d5c3516784a8f04201b6954e8f, type: 3}
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
-  m_anim: {fileID: 0}
+  m_anim: {fileID: 1466100435}
 --- !u!136 &1415427569
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -61757,7 +61817,7 @@ MonoBehaviour:
   m_deathclip: {fileID: 8300000, guid: ede829d5c3516784a8f04201b6954e8f, type: 3}
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
-  m_anim: {fileID: 0}
+  m_anim: {fileID: 632065801}
 --- !u!136 &1440657960
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -62278,6 +62338,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!95 &1452484309 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: 9c1b707b80c272f42b8f152b1ca7b827,
+    type: 3}
+  m_PrefabInternal: {fileID: 474675073}
 --- !u!1001 &1454709516
 Prefab:
   m_ObjectHideFlags: 0
@@ -62763,6 +62828,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!95 &1466100435 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: 9c1b707b80c272f42b8f152b1ca7b827,
+    type: 3}
+  m_PrefabInternal: {fileID: 1296834209}
 --- !u!1001 &1466722660
 Prefab:
   m_ObjectHideFlags: 0
@@ -63253,6 +63323,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!95 &1472347011 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: 9c1b707b80c272f42b8f152b1ca7b827,
+    type: 3}
+  m_PrefabInternal: {fileID: 2056152753}
 --- !u!1 &1473665213
 GameObject:
   m_ObjectHideFlags: 0
@@ -65106,7 +65181,7 @@ MonoBehaviour:
   m_deathclip: {fileID: 8300000, guid: ede829d5c3516784a8f04201b6954e8f, type: 3}
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
-  m_anim: {fileID: 0}
+  m_anim: {fileID: 2093400686}
 --- !u!136 &1505272683
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -68393,6 +68468,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!95 &1565833017 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: 9c1b707b80c272f42b8f152b1ca7b827,
+    type: 3}
+  m_PrefabInternal: {fileID: 1451132059}
 --- !u!1001 &1566904837
 Prefab:
   m_ObjectHideFlags: 0
@@ -69878,6 +69958,11 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 20
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &1604455105 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: 9c1b707b80c272f42b8f152b1ca7b827,
+    type: 3}
+  m_PrefabInternal: {fileID: 996779032}
 --- !u!54 &1604455106
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -70667,6 +70752,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!95 &1616483241 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: 9c1b707b80c272f42b8f152b1ca7b827,
+    type: 3}
+  m_PrefabInternal: {fileID: 944178842}
 --- !u!1 &1619410494
 GameObject:
   m_ObjectHideFlags: 0
@@ -75670,6 +75760,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!95 &1742125167 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: 9c1b707b80c272f42b8f152b1ca7b827,
+    type: 3}
+  m_PrefabInternal: {fileID: 1307564045}
 --- !u!1001 &1742847642
 Prefab:
   m_ObjectHideFlags: 0
@@ -75951,7 +76046,7 @@ MonoBehaviour:
   m_deathclip: {fileID: 8300000, guid: ede829d5c3516784a8f04201b6954e8f, type: 3}
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
-  m_anim: {fileID: 0}
+  m_anim: {fileID: 537027533}
 --- !u!136 &1745102171
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -81578,6 +81673,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!95 &1865555058 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: 9c1b707b80c272f42b8f152b1ca7b827,
+    type: 3}
+  m_PrefabInternal: {fileID: 1667679801}
 --- !u!1 &1866650628
 GameObject:
   m_ObjectHideFlags: 0
@@ -81627,7 +81727,7 @@ MonoBehaviour:
   m_deathclip: {fileID: 8300000, guid: ede829d5c3516784a8f04201b6954e8f, type: 3}
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
-  m_anim: {fileID: 0}
+  m_anim: {fileID: 837020227}
 --- !u!136 &1866650631
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -82032,6 +82132,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!95 &1874161873 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: 9c1b707b80c272f42b8f152b1ca7b827,
+    type: 3}
+  m_PrefabInternal: {fileID: 1506480719}
 --- !u!1001 &1875370555
 Prefab:
   m_ObjectHideFlags: 0
@@ -89080,6 +89185,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!95 &2048793028 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: 9c1b707b80c272f42b8f152b1ca7b827,
+    type: 3}
+  m_PrefabInternal: {fileID: 592444009}
 --- !u!1 &2052058081 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 176788, guid: a403260d581bded4d85f723fd39eb456, type: 2}
@@ -89805,6 +89915,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!95 &2063392140 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: 9c1b707b80c272f42b8f152b1ca7b827,
+    type: 3}
+  m_PrefabInternal: {fileID: 576136616}
 --- !u!1001 &2066843605
 Prefab:
   m_ObjectHideFlags: 0
@@ -90223,7 +90338,7 @@ MonoBehaviour:
   m_deathclip: {fileID: 8300000, guid: ede829d5c3516784a8f04201b6954e8f, type: 3}
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
-  m_anim: {fileID: 0}
+  m_anim: {fileID: 1604455105}
 --- !u!136 &2071379787
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -91538,6 +91653,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!95 &2093400686 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: 9c1b707b80c272f42b8f152b1ca7b827,
+    type: 3}
+  m_PrefabInternal: {fileID: 790286712}
 --- !u!1001 &2095011477
 Prefab:
   m_ObjectHideFlags: 0
