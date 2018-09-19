@@ -13,7 +13,6 @@ public class Dialogue : MonoBehaviour {
     public int sentnum;
     public GameObject DialogueOb;
     public GameObject GUI;
-    public GameObject DialogueManager;
 
     private void Start()
     {
@@ -33,7 +32,6 @@ public class Dialogue : MonoBehaviour {
             DialogueOb.SetActive(false);
             GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>().enabled = true;
             GUI.SetActive(true);
-            DialogueManager.SetActive(false);
 
         }
 

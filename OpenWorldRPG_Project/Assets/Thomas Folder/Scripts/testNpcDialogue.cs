@@ -8,7 +8,6 @@ public class testNpcDialogue : MonoBehaviour {
     public bool interactable;
     public GameObject QuestMarker;
     public GameObject Dialogue;
-    public GameObject DialogueManager;
     public GameObject Interact;
     public GameObject GUI;
     public bool interacted;
@@ -42,7 +41,6 @@ public class testNpcDialogue : MonoBehaviour {
             GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>().enabled = false;
             GUI.SetActive(false);
             GameObject.FindGameObjectWithTag("QuestTracker").GetComponent<QuestMarkerTracker>().ActiveQuest += 1;
-            DialogueManager.SetActive(true);
             
         }
     }

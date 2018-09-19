@@ -12,8 +12,6 @@ public class interiorDoorEnter : MonoBehaviour {
     private bool isCol;
     public bool QuestDoor;
     public GameObject QM;
-    public bool OneTimeOpen;
-    public bool EnterAllow;
 
 
 
@@ -23,21 +21,16 @@ public class interiorDoorEnter : MonoBehaviour {
         GameObject p = GameObject.FindGameObjectWithTag("Player");
         controller = p.GetComponent<playerController>();
         isCol = false;
-        EnterAllow = true;
 
     }
 	
 	// Update is called once per frame
 	void Update () {
-		if (EnterPress == true && Input.GetKeyDown(KeyCode.F) && EnterAllow == true)
+		if (EnterPress == true && Input.GetKeyDown(KeyCode.F))
         {
             print("f");
             Player.transform.position = Exit.transform.position;
             controller.canEnter = false;
-            if (OneTimeOpen)
-            {
-                EnterAllow = false;
-            }
 
             if (QuestDoor == true)
             {
@@ -61,7 +54,7 @@ public class interiorDoorEnter : MonoBehaviour {
 
     private void OnMouseOver()
     {
-        if(isCol == true && EnterAllow == true)
+        if(isCol == true)
         {
             EnterText.SetActive(true);
             EnterPress = true;
