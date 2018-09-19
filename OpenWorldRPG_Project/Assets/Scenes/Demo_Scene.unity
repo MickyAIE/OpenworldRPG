@@ -7344,6 +7344,7 @@ MonoBehaviour:
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 1452484309}
+  move: {fileID: 1452484302}
 --- !u!136 &170113780
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10147,6 +10148,7 @@ MonoBehaviour:
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 1072543669}
+  move: {fileID: 1072543662}
 --- !u!136 &237885076
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -15121,6 +15123,7 @@ MonoBehaviour:
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 107284305}
+  move: {fileID: 107284298}
 --- !u!136 &379170617
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -23179,6 +23182,7 @@ MonoBehaviour:
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 1742125167}
+  move: {fileID: 1742125160}
 --- !u!136 &545159303
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -24312,6 +24316,7 @@ MonoBehaviour:
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 594583403}
+  move: {fileID: 594583396}
 --- !u!136 &569124027
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -25340,6 +25345,7 @@ MonoBehaviour:
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 1273673683}
+  move: {fileID: 1273673676}
 --- !u!136 &586251202
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -29844,6 +29850,7 @@ MonoBehaviour:
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 2048793028}
+  move: {fileID: 2048793021}
 --- !u!136 &670559397
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -32579,6 +32586,7 @@ MonoBehaviour:
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 1472347011}
+  move: {fileID: 1472347004}
 --- !u!136 &757862292
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -34431,6 +34439,7 @@ MonoBehaviour:
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 1865555058}
+  move: {fileID: 1865555051}
 --- !u!136 &798603890
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -34884,6 +34893,7 @@ MonoBehaviour:
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 852218977}
+  move: {fileID: 852218970}
 --- !u!136 &809023399
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -36396,6 +36406,7 @@ MonoBehaviour:
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 881768533}
+  move: {fileID: 881768526}
 --- !u!136 &837574464
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -37757,6 +37768,7 @@ MonoBehaviour:
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 1565833017}
+  move: {fileID: 1565833010}
 --- !u!136 &874558456
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -55222,6 +55234,7 @@ MonoBehaviour:
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 2063392140}
+  move: {fileID: 2063392133}
 --- !u!136 &1282475931
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -55344,6 +55357,7 @@ MonoBehaviour:
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 433384878}
+  move: {fileID: 433384871}
 --- !u!136 &1284360051
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -56484,6 +56498,7 @@ MonoBehaviour:
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 1396393569}
+  move: {fileID: 1396393562}
 --- !u!136 &1301010238
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -57015,6 +57030,7 @@ MonoBehaviour:
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 1874161873}
+  move: {fileID: 1874161866}
 --- !u!136 &1309792505
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -60404,6 +60420,7 @@ MonoBehaviour:
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 813733252}
+  move: {fileID: 813733245}
 --- !u!136 &1401705848
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -60591,6 +60608,7 @@ MonoBehaviour:
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 1616483241}
+  move: {fileID: 1616483234}
 --- !u!136 &1409174085
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -60675,6 +60693,7 @@ MonoBehaviour:
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 1466100435}
+  move: {fileID: 1466100428}
 --- !u!136 &1415427569
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -61818,6 +61837,7 @@ MonoBehaviour:
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 632065801}
+  move: {fileID: 632065794}
 --- !u!136 &1440657960
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -65182,6 +65202,7 @@ MonoBehaviour:
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 2093400686}
+  move: {fileID: 2093400679}
 --- !u!136 &1505272683
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -76047,6 +76068,7 @@ MonoBehaviour:
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 537027533}
+  move: {fileID: 537027526}
 --- !u!136 &1745102171
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -81728,6 +81750,7 @@ MonoBehaviour:
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 837020227}
+  move: {fileID: 837020220}
 --- !u!136 &1866650631
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -90339,6 +90362,7 @@ MonoBehaviour:
   m_enemyexpgiven: 1
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 1604455105}
+  move: {fileID: 1604455102}
 --- !u!136 &2071379787
 CapsuleCollider:
   m_ObjectHideFlags: 0
