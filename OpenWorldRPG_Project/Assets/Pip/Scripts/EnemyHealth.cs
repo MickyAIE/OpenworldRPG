@@ -27,10 +27,12 @@ public class EnemyHealth : MonoBehaviour
     AudioSource m_soundenemy;                // Sound of enemy when death
     CapsuleCollider m_capsule;               // Ref to capsule collider
     ParticleSystem m_particle;               // Ref to particle system
-
+    public GameObject move;                  // Movement Script
 
     bool m_falling;                          // Play a animation for the enemy to disappear
     bool m_dead;                             // You know, just to make sure they are dead
+
+    
 
 
     private void Start()
@@ -121,6 +123,7 @@ public class EnemyHealth : MonoBehaviour
         //Experience.experience += m_enemyexpgiven;
 
         Destroy(this.gameObject, 2f);
+        Destroy(move, 2f);
     }
 
     public void m_actualfalling()
