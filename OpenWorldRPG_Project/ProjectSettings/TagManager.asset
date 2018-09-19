@@ -9,6 +9,8 @@ TagManager:
   - Ground
   - Enemy
   - DamageReciever
+  - QuestTracker
+  - QuestMarker
   layers:
   - Default
   - TransparentFX

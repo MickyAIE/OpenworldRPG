@@ -40,6 +40,7 @@ public class testNpcDialogue : MonoBehaviour {
             npcanim.SetBool("IsTalking", true);
             GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>().enabled = false;
             GUI.SetActive(false);
+            GameObject.FindGameObjectWithTag("QuestTracker").GetComponent<QuestMarkerTracker>().ActiveQuest += 1;
             
         }
     }

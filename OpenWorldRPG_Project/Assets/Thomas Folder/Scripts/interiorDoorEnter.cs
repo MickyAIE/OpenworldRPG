@@ -10,6 +10,8 @@ public class interiorDoorEnter : MonoBehaviour {
     public GameObject EnterText;
     private bool EnterPress;
     private bool isCol;
+    public bool QuestDoor;
+    public GameObject QM;
 
 
 
@@ -19,7 +21,8 @@ public class interiorDoorEnter : MonoBehaviour {
         GameObject p = GameObject.FindGameObjectWithTag("Player");
         controller = p.GetComponent<playerController>();
         isCol = false;
-	}
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -28,7 +31,15 @@ public class interiorDoorEnter : MonoBehaviour {
             print("f");
             Player.transform.position = Exit.transform.position;
             controller.canEnter = false;
+
+            if (QuestDoor == true)
+            {
+                QM.SetActive(false);
+                GameObject.FindGameObjectWithTag("QuestTracker").GetComponent<QuestMarkerTracker>().ActiveQuest += 1;
+            }
         }
+
+        
     }
 
     private void OnTriggerEnter(Collider other)
