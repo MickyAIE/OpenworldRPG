@@ -58,6 +58,11 @@ public class EnemyHealth : MonoBehaviour
             transform.Translate(-Vector3.up * m_fallspeed * Time.deltaTime);
         }
         m_healthbarcurrent(0);
+
+        if (m_currenthealth <= 1.1 && !m_dead)
+        {
+            Death();
+        }
     }
 
 
@@ -109,6 +114,8 @@ public class EnemyHealth : MonoBehaviour
         m_soundenemy.clip = m_deathclip;
         m_soundenemy.Play();
         //Experience.experience += m_enemyexpgiven;
+
+        Destroy(this.gameObject, 1f);
     }
 
     public void m_actualfalling()
@@ -117,5 +124,13 @@ public class EnemyHealth : MonoBehaviour
         GetComponent<Rigidbody>().isKinematic = true;
         m_falling = true;
         Destroy(gameObject, 5f);
+    }
+
+    public void GetHitSucka()
+    {
+        Debug.Log("I got hit!");
+
+        m_health -= 25;
+
     }
 }

@@ -50,9 +50,11 @@ public class HitBox : MonoBehaviour {
             if (other.gameObject.tag.Equals("DamageReciever"))
             {
                 hitBox.enabled = false;
-
+                
                 Debug.Log("Do damage to enemy");
                 Damage(boxes.transform);
+
+                other.gameObject.transform.SendMessage("GetHitSucka");
             }
 
 
