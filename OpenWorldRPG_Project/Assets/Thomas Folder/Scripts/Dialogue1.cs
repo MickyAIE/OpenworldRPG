@@ -3,22 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Dialogue : MonoBehaviour {
+public class Dialogue1 : MonoBehaviour {
 
     public TextMeshPro textDisplay;
     public string[] sentences;
     private int index;
     public float typingSpeed;
     public GameObject nextb;
-    public int sentnum;
+    public int sentnum1;
     public GameObject DialogueOb;
     public GameObject GUI;
-    public GameObject DialogueManager;
 
     private void Start()
     {
         StartCoroutine(Type());
-        sentnum = 0;
+        sentnum1 = 0;
     }
 
     private void Update()
@@ -28,12 +27,11 @@ public class Dialogue : MonoBehaviour {
             nextb.SetActive(true);
         }
 
-        if (sentnum >= sentences.Length)
+        if (sentnum1 >= sentences.Length)
         {
             DialogueOb.SetActive(false);
             GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>().enabled = true;
             GUI.SetActive(true);
-            DialogueManager.SetActive(false);
 
         }
 
@@ -64,13 +62,13 @@ public class Dialogue : MonoBehaviour {
             index++;
             textDisplay.text = "";
             StartCoroutine(Type());
-            sentnum += 1;
+            sentnum1 += 1;
             print("next");
         } else
         {
             textDisplay.text = "";
             Cursor.lockState = CursorLockMode.Locked;
-            sentnum += 1;
+            sentnum1 += 1;
         }
     }
 }
