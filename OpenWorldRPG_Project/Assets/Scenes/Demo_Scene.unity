@@ -8975,10 +8975,14 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 18
 =======
   m_RootOrder: 19
 >>>>>>> 0f14be55af11d44ca241be607872dba5d8dc6e9f
+=======
+  m_RootOrder: 22
+>>>>>>> parent of b41f369... More NPC Stuff
 =======
   m_RootOrder: 22
 >>>>>>> parent of b41f369... More NPC Stuff
@@ -21972,10 +21976,14 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 12
 =======
   m_RootOrder: 13
 >>>>>>> 0f14be55af11d44ca241be607872dba5d8dc6e9f
+=======
+  m_RootOrder: 16
+>>>>>>> parent of b41f369... More NPC Stuff
 =======
   m_RootOrder: 16
 >>>>>>> parent of b41f369... More NPC Stuff
@@ -27958,10 +27966,14 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 16
 =======
   m_RootOrder: 17
 >>>>>>> 0f14be55af11d44ca241be607872dba5d8dc6e9f
+=======
+  m_RootOrder: 20
+>>>>>>> parent of b41f369... More NPC Stuff
 =======
   m_RootOrder: 20
 >>>>>>> parent of b41f369... More NPC Stuff
@@ -28427,10 +28439,14 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 15
 =======
   m_RootOrder: 16
 >>>>>>> 0f14be55af11d44ca241be607872dba5d8dc6e9f
+=======
+  m_RootOrder: 19
+>>>>>>> parent of b41f369... More NPC Stuff
 =======
   m_RootOrder: 19
 >>>>>>> parent of b41f369... More NPC Stuff
@@ -32167,10 +32183,14 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 11
 =======
   m_RootOrder: 12
 >>>>>>> 0f14be55af11d44ca241be607872dba5d8dc6e9f
+=======
+  m_RootOrder: 15
+>>>>>>> parent of b41f369... More NPC Stuff
 =======
   m_RootOrder: 15
 >>>>>>> parent of b41f369... More NPC Stuff
@@ -35244,10 +35264,14 @@ Prefab:
       propertyPath: m_RootOrder
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 2
 =======
       value: 3
 >>>>>>> 0f14be55af11d44ca241be607872dba5d8dc6e9f
+=======
+      value: 6
+>>>>>>> parent of b41f369... More NPC Stuff
 =======
       value: 6
 >>>>>>> parent of b41f369... More NPC Stuff
@@ -44397,10 +44421,14 @@ RectTransform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 23
 =======
   m_RootOrder: 24
 >>>>>>> 0f14be55af11d44ca241be607872dba5d8dc6e9f
+=======
+  m_RootOrder: 27
+>>>>>>> parent of b41f369... More NPC Stuff
 =======
   m_RootOrder: 27
 >>>>>>> parent of b41f369... More NPC Stuff
@@ -44754,10 +44782,14 @@ Prefab:
       propertyPath: m_RootOrder
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 1
 =======
       value: 0
 >>>>>>> 0f14be55af11d44ca241be607872dba5d8dc6e9f
+=======
+      value: 5
+>>>>>>> parent of b41f369... More NPC Stuff
 =======
       value: 5
 >>>>>>> parent of b41f369... More NPC Stuff
@@ -47898,10 +47930,14 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 19
 =======
   m_RootOrder: 20
 >>>>>>> 0f14be55af11d44ca241be607872dba5d8dc6e9f
+=======
+  m_RootOrder: 23
+>>>>>>> parent of b41f369... More NPC Stuff
 =======
   m_RootOrder: 23
 >>>>>>> parent of b41f369... More NPC Stuff
@@ -53490,10 +53526,14 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 17
 =======
   m_RootOrder: 18
 >>>>>>> 0f14be55af11d44ca241be607872dba5d8dc6e9f
+=======
+  m_RootOrder: 21
+>>>>>>> parent of b41f369... More NPC Stuff
 =======
   m_RootOrder: 21
 >>>>>>> parent of b41f369... More NPC Stuff
@@ -55518,10 +55558,14 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 13
 =======
   m_RootOrder: 14
 >>>>>>> 0f14be55af11d44ca241be607872dba5d8dc6e9f
+=======
+  m_RootOrder: 17
+>>>>>>> parent of b41f369... More NPC Stuff
 =======
   m_RootOrder: 17
 >>>>>>> parent of b41f369... More NPC Stuff
@@ -56484,10 +56528,14 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 22
 =======
   m_RootOrder: 23
 >>>>>>> 0f14be55af11d44ca241be607872dba5d8dc6e9f
+=======
+  m_RootOrder: 26
+>>>>>>> parent of b41f369... More NPC Stuff
 =======
   m_RootOrder: 26
 >>>>>>> parent of b41f369... More NPC Stuff
@@ -57407,6 +57455,7 @@ Transform:
   m_PrefabParentObject: {fileID: 426282, guid: 59fda38c2143a264fb1ca61086abcc96, type: 2}
   m_PrefabInternal: {fileID: 1279840027}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1282475928
 GameObject:
   m_ObjectHideFlags: 0
@@ -57755,6 +57804,8 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1283853847}
   m_Mesh: {fileID: 0}
+=======
+>>>>>>> parent of b41f369... More NPC Stuff
 =======
 >>>>>>> parent of b41f369... More NPC Stuff
 --- !u!1001 &1284358471
@@ -70378,10 +70429,14 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 21
 =======
   m_RootOrder: 22
 >>>>>>> 0f14be55af11d44ca241be607872dba5d8dc6e9f
+=======
+  m_RootOrder: 25
+>>>>>>> parent of b41f369... More NPC Stuff
 =======
   m_RootOrder: 25
 >>>>>>> parent of b41f369... More NPC Stuff
@@ -71649,10 +71704,14 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 14
 =======
   m_RootOrder: 15
 >>>>>>> 0f14be55af11d44ca241be607872dba5d8dc6e9f
+=======
+  m_RootOrder: 18
+>>>>>>> parent of b41f369... More NPC Stuff
 =======
   m_RootOrder: 18
 >>>>>>> parent of b41f369... More NPC Stuff
@@ -76800,10 +76859,14 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 24
 =======
   m_RootOrder: 25
 >>>>>>> 0f14be55af11d44ca241be607872dba5d8dc6e9f
+=======
+  m_RootOrder: 28
+>>>>>>> parent of b41f369... More NPC Stuff
 =======
   m_RootOrder: 28
 >>>>>>> parent of b41f369... More NPC Stuff
@@ -86273,6 +86336,7 @@ Prefab:
   m_IsPrefabParent: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!4 &1897386114 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4147895884234264, guid: 3195c341424a87d4eb70c36874765a87,
@@ -86296,6 +86360,8 @@ BoxCollider:
   m_Size: {x: 1.3669208, y: 0.14335784, z: 0.310129}
   m_Center: {x: 0.4176075, y: -0.024650665, z: -0.060144193}
 >>>>>>> 0f14be55af11d44ca241be607872dba5d8dc6e9f
+=======
+>>>>>>> parent of b41f369... More NPC Stuff
 =======
 >>>>>>> parent of b41f369... More NPC Stuff
 --- !u!1001 &1903282258
@@ -92509,6 +92575,7 @@ MeshFilter:
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &2045644882
 GameObject:
   m_ObjectHideFlags: 0
@@ -92674,6 +92741,8 @@ Prefab:
   m_ParentPrefab: {fileID: 100100000, guid: 9c1b707b80c272f42b8f152b1ca7b827, type: 3}
   m_IsPrefabParent: 0
 >>>>>>> 0f14be55af11d44ca241be607872dba5d8dc6e9f
+=======
+>>>>>>> parent of b41f369... More NPC Stuff
 =======
 >>>>>>> parent of b41f369... More NPC Stuff
 --- !u!1001 &2047336300
@@ -93972,11 +94041,14 @@ MonoBehaviour:
   m_enemyslider: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_anim: {fileID: 0}
 =======
   m_anim: {fileID: 1604455105}
   move: {fileID: 1604455102}
 >>>>>>> 0f14be55af11d44ca241be607872dba5d8dc6e9f
+=======
+>>>>>>> parent of b41f369... More NPC Stuff
 =======
 >>>>>>> parent of b41f369... More NPC Stuff
 --- !u!136 &2071379787
