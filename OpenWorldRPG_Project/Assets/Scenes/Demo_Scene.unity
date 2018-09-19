@@ -40606,6 +40606,18 @@ Prefab:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 3c867657750bf55449ee7db0828f724b, type: 2}
+    - target: {fileID: 400012, guid: 9c1b707b80c272f42b8f152b1ca7b827, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 9c1b707b80c272f42b8f152b1ca7b827, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 9c1b707b80c272f42b8f152b1ca7b827, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9c1b707b80c272f42b8f152b1ca7b827, type: 3}
   m_IsPrefabParent: 0
@@ -65354,6 +65366,10 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.66, y: 2, z: 0.62}
   m_Center: {x: 0, y: 1.04, z: 0}
+--- !u!4 &1604455109 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400008, guid: 9c1b707b80c272f42b8f152b1ca7b827, type: 3}
+  m_PrefabInternal: {fileID: 996779032}
 --- !u!1 &1604792075 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 147672, guid: 77ad9661321c6e84280c8fbe32492c06, type: 2}
@@ -84498,6 +84514,68 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 440136, guid: 1018a369bf1e2304693a74ea94205090, type: 2}
   m_PrefabInternal: {fileID: 2071315637}
+--- !u!1 &2071379784
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2071379785}
+  - component: {fileID: 2071379787}
+  - component: {fileID: 2071379786}
+  m_Layer: 0
+  m_Name: TakeDamage
+  m_TagString: DamageReciever
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2071379785
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2071379784}
+  m_LocalRotation: {x: -0, y: -0.9990291, z: -0, w: 0.04405538}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1604455109}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2071379786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2071379784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07fc24fd4809d8445a11ecdd8c12072c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_health: 100
+  m_currenthealth: 0
+  m_healthbar: 0
+  m_fallspeed: 2
+  m_damagesound: {fileID: 8300000, guid: ede829d5c3516784a8f04201b6954e8f, type: 3}
+  m_deathclip: {fileID: 8300000, guid: ede829d5c3516784a8f04201b6954e8f, type: 3}
+  m_enemyexpgiven: 1
+  m_enemyslider: {fileID: 0}
+--- !u!136 &2071379787
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2071379784}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &2071806205
 GameObject:
   m_ObjectHideFlags: 0

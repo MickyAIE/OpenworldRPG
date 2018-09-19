@@ -62,10 +62,12 @@ public class HitBox : MonoBehaviour {
 
     private void Damage(Transform enemy)
     {
+        Debug.Log("In the damage section");
         EnemyHealth enemyHealth = enemy.GetComponent<EnemyHealth>();
-
+        Debug.Log("IN THE ENEMYHEALTH SECTION");
         if (enemyHealth != null)
         {
+            Debug.Log("NULL?");
             enemyHealth.Takedamage(damage);
             Debug.Log("Enemy " + eTarget.name + "should be taking " + enemyHealth.m_health + " damage");
         }
