@@ -9,6 +9,7 @@ public class testNpcDialogue : MonoBehaviour {
     public GameObject QuestMarker;
     public GameObject Dialogue;
     public GameObject Interact;
+    public GameObject GUI;
     public bool interacted;
     private bool isCol;
 
@@ -31,7 +32,6 @@ public class testNpcDialogue : MonoBehaviour {
             print("F");
             QuestMarker.SetActive(false);
             Dialogue.SetActive(true);
-            Cursor.lockState = CursorLockMode.Confined;
             interacted = true;
             interactable = false;
             Interact.SetActive(false);
@@ -39,6 +39,7 @@ public class testNpcDialogue : MonoBehaviour {
             npcanim.SetBool("IsWaving", false);
             npcanim.SetBool("IsTalking", true);
             GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>().enabled = false;
+            GUI.SetActive(false);
             
         }
     }

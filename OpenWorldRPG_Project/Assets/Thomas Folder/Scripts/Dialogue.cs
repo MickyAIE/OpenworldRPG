@@ -12,6 +12,7 @@ public class Dialogue : MonoBehaviour {
     public GameObject nextb;
     public int sentnum;
     public GameObject DialogueOb;
+    public GameObject GUI;
 
     private void Start()
     {
@@ -30,7 +31,14 @@ public class Dialogue : MonoBehaviour {
         {
             DialogueOb.SetActive(false);
             GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>().enabled = true;
+            GUI.SetActive(true);
 
+        }
+
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            NextSentence();
+            print("NextSen");
         }
 
         
