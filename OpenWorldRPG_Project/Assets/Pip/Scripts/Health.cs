@@ -94,7 +94,7 @@ public class Health : MonoBehaviour
             }
             if(Input.GetKeyDown(KeyCode.Escape))
             {
-                SceneManager.LoadScene("Demo_Scene");
+                SceneManager.LoadScene("Menu");
                 playerIsDead = false;
                 playerDead.text = ("");
             }

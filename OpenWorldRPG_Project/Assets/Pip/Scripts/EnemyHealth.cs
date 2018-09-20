@@ -29,7 +29,7 @@ public class EnemyHealth : MonoBehaviour
     public float timer = 0f;                 // Timer for death fall
 
     bool m_falling;                          // Play a animation for the enemy to disappear
-    bool m_dead;                             // You know, just to make sure they are dead
+    public bool m_dead;                             // You know, just to make sure they are dead
 
 
     void Awake()
