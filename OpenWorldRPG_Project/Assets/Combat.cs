@@ -11,6 +11,8 @@ public class Combat : MonoBehaviour {
 
     public EnemyMovement enemyMovement;
 
+    public PlayerAttack playerAttack;
+
     // Use this for initialization
     void Start () {
 
@@ -54,9 +56,12 @@ public class Combat : MonoBehaviour {
 
     public void StartDamage(string StartDamage)
     {
-        hitBox.enabled = true;
+        if (playerAttack.blocking == true)
+        {
+            hitBox.enabled = true;
 
-        weaponHitBoxScript.enabled = true;
+            weaponHitBoxScript.enabled = true;
+        }
 
     }
     private void OnTriggerEnter(Collider other)
