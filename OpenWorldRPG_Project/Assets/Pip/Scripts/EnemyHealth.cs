@@ -136,7 +136,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void GetHitSucka()
     {
-        Debug.Log("I got hit!");
+        Debug.Log("Skele got hit!");
 
         m_health -= 15;
 

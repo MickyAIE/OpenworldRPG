@@ -35,8 +35,8 @@ public class Health : MonoBehaviour
     [Header("Other things")]
     Animator m_anim;                                                // Animator component
     AudioSource m_audio;                                            // Audio component
-    public AudioClip ourdeathclip;                                  // Our death sound
-    public AudioClip ourmanafail;                                   // Failed mana sound\
+    //public AudioClip ourdeathclip;                                  // Our death sound
+    //public AudioClip ourmanafail;                                   // Failed mana sound\
                                                                     // Playermovement m_playermovement;                             // Reference to the movement
 
     public Text playerDead;
@@ -71,6 +71,11 @@ public class Health : MonoBehaviour
         }
         our_damage = false;
 
+        if(our_health <= 1)
+        {
+            Death();
+        }
+
         if(playerIsDead == true)
         {
             if(Input.GetKeyDown(KeyCode.KeypadEnter))
@@ -81,7 +86,7 @@ public class Health : MonoBehaviour
             }
             if(Input.GetKeyDown(KeyCode.Escape))
             {
-                SceneManager.LoadScene("Main Menu");
+                SceneManager.LoadScene("Demo_Scene");
                 playerIsDead = false;
                 playerDead.text = ("");
             }
@@ -93,7 +98,7 @@ public class Health : MonoBehaviour
         our_damage = true;
         our_currenthealth -= m_amount;
         ourhealthslider.value = our_currenthealth;
-        m_audio.Play();
+        //m_audio.Play();
         if(our_currenthealth <= 0 && !our_death)
         {
             Death();
@@ -115,9 +120,9 @@ public class Health : MonoBehaviour
     void Death()
     {
         our_death = true;
-        m_anim.SetTrigger("Dead");
-        m_audio.clip = ourdeathclip;
-        m_audio.Play();
+        //m_anim.SetTrigger("Dead");
+        //m_audio.clip = ourdeathclip;
+        //m_audio.Play();
 
         playerDead.text = ("You Died! Press Enter to restart. Press Esc to Quit.");
         Time.timeScale = 0;
@@ -131,7 +136,14 @@ public class Health : MonoBehaviour
     {
         our_manause = true;
         m_anim.SetTrigger("Fail");
-        m_audio.clip = ourmanafail;
-        m_audio.Play();
+        //m_audio.clip = ourmanafail;
+       // m_audio.Play();
+    }
+
+    void GetHitPlaya()
+    {
+        Debug.Log("player got hit");
+
+        our_health -= 10;
     }
 }

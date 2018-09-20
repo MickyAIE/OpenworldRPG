@@ -52,11 +52,20 @@ public class HitBox : MonoBehaviour {
                 hitBox.enabled = false;
                 
                 Debug.Log("Do damage to enemy");
-                Damage(boxes.transform);
+                //Damage(boxes.transform);
 
                 other.gameObject.transform.SendMessage("GetHitSucka");
             }
 
+            if (other.gameObject.tag.Equals("Player"))
+            {
+                hitBox.enabled = false;
+
+                Debug.Log("Do damage to Player");
+                //Damage(boxes.transform);
+
+                other.gameObject.transform.SendMessage("GetHitPlaya");
+            }
 
         }
 
