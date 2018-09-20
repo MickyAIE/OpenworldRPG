@@ -35,9 +35,9 @@ public class Health : MonoBehaviour
     [Header("Other things")]
     Animator m_anim;                                                // Animator component
     AudioSource m_audio;                                            // Audio component
-    //public AudioClip ourdeathclip;                                  // Our death sound
-    //public AudioClip ourmanafail;                                   // Failed mana sound\
-                                                                    // Playermovement m_playermovement;                             // Reference to the movement
+    //public AudioClip ourdeathclip;                                // Our death sound
+    //public AudioClip ourmanafail;                                 // Failed mana sound\
+    // Playermovement m_playermovement;                             // Reference to the movement
 
     public Text playerDead;
     private bool playerIsDead = false;
@@ -50,8 +50,11 @@ public class Health : MonoBehaviour
         //m_playermovement = GetComponent<Playermovement>;
 
         our_currenthealth = our_health;
+        ourhealthslider = GetComponent<Slider>();
         our_currentmana = our_mana;
+        ourmanaslider = GetComponent<Slider>();
         our_currentexp = our_exp;
+        ourexpslider = GetComponent<Slider>();
 
         Time.timeScale = 1;
         playerIsDead = false;
@@ -65,16 +68,21 @@ public class Health : MonoBehaviour
         {
             our_damageimage.color = our_damagecolour;
         }
+
         else
         {
             our_damageimage.color = Color.Lerp(our_damageimage.color, Color.clear, our_damagespeed * Time.deltaTime);
         }
+
         our_damage = false;
+
+
 
         if(our_health <= 1)
         {
             Death();
         }
+
 
         if(playerIsDead == true)
         {
@@ -145,5 +153,6 @@ public class Health : MonoBehaviour
         Debug.Log("player got hit");
 
         our_health -= 3;
+        ourhealthslider.maxValue = our_currenthealth;
     }
 }

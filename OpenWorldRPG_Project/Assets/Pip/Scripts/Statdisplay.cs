@@ -8,6 +8,20 @@ public class Statdisplay : MonoBehaviour
     public Text m_name;
     public Text m_value;
 
+    private Characterstats _stat;
+    public Characterstats made_stat
+    {
+        get
+        {
+            return _stat;
+        }
+        set
+        {
+            _stat = value;
+            UpdateStatValue();
+        }
+    }
+
 
     private void OnValidate()
     {
@@ -18,6 +32,9 @@ public class Statdisplay : MonoBehaviour
 
     public void UpdateStatValue()
     {
-        Debug.Log("Hello");
+        m_value.text = _stat.Strength.Value.ToString();
+        m_value.text = _stat.Agility.Value.ToString();
+        m_value.text = _stat.Intelligence.Value.ToString();
+        m_value.text = _stat.Vitality.Value.ToString();
     }
 }

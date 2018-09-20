@@ -71,4 +71,9 @@ public class Character : MonoBehaviour
             m_inventory.AddItem(item);
         }
     }
+
+    public void UpdateStatValue()
+    {
+        m_statpanel.UpdatedValue();
+    }
 }

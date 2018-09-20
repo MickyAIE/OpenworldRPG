@@ -59,18 +59,17 @@ public class HitBox : MonoBehaviour {
                
             }
 
-            if (other.gameObject.tag.Equals("PlayerDamageReciever"))
+            if (other.gameObject.tag.Equals("Player"))
             {
                 hitBox.enabled = false;
 
                 Debug.Log("Do damage to Player");
-                //Damage(boxes.transform); 
+                //Damage(boxes.transform);
 
                 if (playerAttack.blocking == false)
                 {
                     other.gameObject.transform.SendMessage("GetHitPlaya");
                 }
-                
             }
 
         }
