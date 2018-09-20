@@ -8600,6 +8600,7 @@ MonoBehaviour:
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 1452484309}
   move: {fileID: 0}
+  timer: 0
 --- !u!136 &170113780
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -11486,6 +11487,7 @@ MonoBehaviour:
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 1072543669}
   move: {fileID: 0}
+  timer: 0
 --- !u!136 &237885076
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -14969,19 +14971,6 @@ MonoBehaviour:
   m_inventory: {fileID: 1485534929}
   m_panel: {fileID: 1521932206}
   m_statpanel: {fileID: 2084923176}
---- !u!136 &325079177
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 325079174}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &325079181 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114320813557098336, guid: 6230b1fb2ef9b944f99d53e2cff1e133,
@@ -15002,30 +14991,6 @@ MonoBehaviour:
   controls: {fileID: 1668852616}
   pause: {fileID: 525929511}
   pressPause: {fileID: 1146417289}
---- !u!114 &325079184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 325079174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8773ef2cef874ef47892d7bd68eea8bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  our_health: 100
-  our_currenthealth: 0
-  ourhealthslider: {fileID: 1166017959}
-  our_mana: 20
-  our_currentmana: 0
-  ourmanaslider: {fileID: 1380402783}
-  our_currentexp: 1
-  our_exp: 0
-  ourexpslider: {fileID: 810385628}
-  our_damagespeed: 5
-  our_damageimage: {fileID: 1942424956}
-  our_damagecolour: {r: 1, g: 0, b: 0, a: 0.1}
-  playerDead: {fileID: 1257991849}
 --- !u!1 &325325291
 GameObject:
   m_ObjectHideFlags: 0
@@ -17339,6 +17304,7 @@ MonoBehaviour:
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 107284305}
   move: {fileID: 0}
+  timer: 0
 --- !u!136 &379170617
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -18192,6 +18158,11 @@ Prefab:
       propertyPath: animator
       value: 
       objectReference: {fileID: 390414772}
+    - target: {fileID: 114971630816627908, guid: 6230b1fb2ef9b944f99d53e2cff1e133,
+        type: 2}
+      propertyPath: playerAttack
+      value: 
+      objectReference: {fileID: 325079181}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6230b1fb2ef9b944f99d53e2cff1e133, type: 2}
   m_IsPrefabParent: 0
@@ -21971,6 +21942,73 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 478851512}
+--- !u!1 &478945150
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 478945151}
+  - component: {fileID: 478945153}
+  - component: {fileID: 478945152}
+  m_Layer: 8
+  m_Name: PlayerDamageReciever
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &478945151
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 478945150}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1755951185}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &478945152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 478945150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8773ef2cef874ef47892d7bd68eea8bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  our_health: 100
+  our_currenthealth: 0
+  ourhealthslider: {fileID: 1166017959}
+  our_mana: 20
+  our_currentmana: 0
+  ourmanaslider: {fileID: 1380402783}
+  our_currentexp: 1
+  our_exp: 0
+  ourexpslider: {fileID: 810385628}
+  our_damagespeed: 5
+  our_damageimage: {fileID: 1942424956}
+  our_damagecolour: {r: 1, g: 0, b: 0, a: 0.1}
+  playerDead: {fileID: 1257991849}
+--- !u!136 &478945153
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 478945150}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.3
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &479871324 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 114448, guid: 7360d30a05af7804195e76840febbe6e, type: 2}
@@ -26037,6 +26075,7 @@ MonoBehaviour:
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 1742125167}
   move: {fileID: 0}
+  timer: 0
 --- !u!136 &545159303
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -27448,6 +27487,7 @@ MonoBehaviour:
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 594583403}
   move: {fileID: 0}
+  timer: 0
 --- !u!136 &569124027
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -28493,6 +28533,7 @@ MonoBehaviour:
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 1273673683}
   move: {fileID: 0}
+  timer: 0
 --- !u!136 &586251202
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -33450,6 +33491,7 @@ MonoBehaviour:
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 2048793028}
   move: {fileID: 0}
+  timer: 0
 --- !u!136 &670559397
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -36563,6 +36605,7 @@ MonoBehaviour:
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 1472347011}
   move: {fileID: 0}
+  timer: 0
 --- !u!136 &757862292
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -38513,6 +38556,7 @@ MonoBehaviour:
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 1865555058}
   move: {fileID: 0}
+  timer: 0
 --- !u!136 &798603890
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -38967,6 +39011,7 @@ MonoBehaviour:
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 852218977}
   move: {fileID: 0}
+  timer: 0
 --- !u!136 &809023399
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -40633,6 +40678,7 @@ MonoBehaviour:
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 881768533}
   move: {fileID: 0}
+  timer: 0
 --- !u!136 &837574464
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -42491,6 +42537,7 @@ MonoBehaviour:
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 1565833017}
   move: {fileID: 0}
+  timer: 0
 --- !u!136 &874558456
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -62718,6 +62765,7 @@ MonoBehaviour:
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 2063392140}
   move: {fileID: 0}
+  timer: 0
 --- !u!136 &1282475931
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -62841,6 +62889,7 @@ MonoBehaviour:
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 433384878}
   move: {fileID: 0}
+  timer: 0
 --- !u!136 &1284360051
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -64014,6 +64063,7 @@ MonoBehaviour:
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 1396393569}
   move: {fileID: 0}
+  timer: 0
 --- !u!136 &1301010238
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -64546,6 +64596,7 @@ MonoBehaviour:
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 1874161873}
   move: {fileID: 0}
+  timer: 0
 --- !u!136 &1309792505
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -68407,6 +68458,7 @@ MonoBehaviour:
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 813733252}
   move: {fileID: 0}
+  timer: 0
 --- !u!136 &1401705848
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -68611,6 +68663,7 @@ MonoBehaviour:
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 1616483241}
   move: {fileID: 0}
+  timer: 0
 --- !u!136 &1409174085
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -68712,6 +68765,7 @@ MonoBehaviour:
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 1466100435}
   move: {fileID: 0}
+  timer: 0
 --- !u!136 &1415427569
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -69932,6 +69986,7 @@ MonoBehaviour:
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 632065801}
   move: {fileID: 0}
+  timer: 0
 --- !u!136 &1440657960
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -73744,6 +73799,7 @@ MonoBehaviour:
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 2093400686}
   move: {fileID: 0}
+  timer: 0
 --- !u!136 &1505272683
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -86490,6 +86546,7 @@ MonoBehaviour:
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 537027533}
   move: {fileID: 0}
+  timer: 0
 --- !u!136 &1745102171
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -92835,6 +92892,7 @@ MonoBehaviour:
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 837020227}
   move: {fileID: 0}
+  timer: 0
 --- !u!136 &1866650631
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -102192,6 +102250,7 @@ MonoBehaviour:
   m_enemyslider: {fileID: 0}
   m_anim: {fileID: 1604455105}
   move: {fileID: 0}
+  timer: 0
 --- !u!136 &2071379787
 CapsuleCollider:
   m_ObjectHideFlags: 0
