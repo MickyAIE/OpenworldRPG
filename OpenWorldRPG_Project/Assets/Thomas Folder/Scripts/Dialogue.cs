@@ -14,6 +14,7 @@ public class Dialogue : MonoBehaviour {
     public GameObject DialogueOb;
     public GameObject GUI;
     public GameObject DialogueManager;
+    public GameObject Enemies;
 
     private void Start()
     {
@@ -34,6 +35,7 @@ public class Dialogue : MonoBehaviour {
             GameObject.FindGameObjectWithTag("Player").GetComponent<playerController>().enabled = true;
             GUI.SetActive(true);
             DialogueManager.SetActive(false);
+            Enemies.SetActive(true);
 
         }
 
