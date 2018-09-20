@@ -54,9 +54,11 @@ public class Combat : MonoBehaviour {
 
     public void StartDamage(string StartDamage)
     {
-            hitBox.enabled = true;
+        Debug.Log("HitBox enabled");
 
-            weaponHitBoxScript.enabled = true;
+        hitBox.enabled = true;
+
+        weaponHitBoxScript.enabled = true;
 
     }
     private void OnTriggerEnter(Collider other)

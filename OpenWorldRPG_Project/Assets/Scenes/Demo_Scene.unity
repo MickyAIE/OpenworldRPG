@@ -21625,7 +21625,7 @@ GameObject:
   - component: {fileID: 478945152}
   m_Layer: 8
   m_Name: PlayerDamageReciever
-  m_TagString: Untagged
+  m_TagString: PlayerDamageReciever
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
