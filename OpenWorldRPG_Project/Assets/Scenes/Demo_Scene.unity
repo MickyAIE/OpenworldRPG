@@ -5375,6 +5375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_moveSpeed: 10
   m_targetDistance: 20
+  m_EnemyFollow: 0
   anim: {fileID: 0}
   Player: {fileID: 1755951185}
 --- !u!65 &107284302
@@ -18760,6 +18761,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_moveSpeed: 10
   m_targetDistance: 20
+  m_EnemyFollow: 0
   anim: {fileID: 0}
   Player: {fileID: 1755951185}
 --- !u!195 &433384874
@@ -23687,6 +23689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_moveSpeed: 10
   m_targetDistance: 20
+  m_EnemyFollow: 0
   anim: {fileID: 0}
   Player: {fileID: 1755951185}
 --- !u!65 &537027530
@@ -27276,6 +27279,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_moveSpeed: 10
   m_targetDistance: 20
+  m_EnemyFollow: 0
   anim: {fileID: 0}
   Player: {fileID: 1755951185}
 --- !u!65 &594583400
@@ -29324,6 +29328,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_moveSpeed: 10
   m_targetDistance: 20
+  m_EnemyFollow: 0
   anim: {fileID: 0}
   Player: {fileID: 1755951185}
 --- !u!65 &632065798
@@ -36994,6 +36999,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_moveSpeed: 10
   m_targetDistance: 20
+  m_EnemyFollow: 0
   anim: {fileID: 0}
   Player: {fileID: 1755951185}
 --- !u!65 &813733249
@@ -38163,6 +38169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_moveSpeed: 10
   m_targetDistance: 20
+  m_EnemyFollow: 0
   anim: {fileID: 0}
   Player: {fileID: 1755951185}
 --- !u!65 &837020224
@@ -38738,6 +38745,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_moveSpeed: 10
   m_targetDistance: 20
+  m_EnemyFollow: 0
   anim: {fileID: 0}
   Player: {fileID: 1755951185}
 --- !u!195 &852218973
@@ -40186,6 +40194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_moveSpeed: 10
   m_targetDistance: 20
+  m_EnemyFollow: 0
   anim: {fileID: 0}
   Player: {fileID: 1755951185}
 --- !u!195 &881768529
@@ -49504,6 +49513,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_moveSpeed: 10
   m_targetDistance: 20
+  m_EnemyFollow: 0
   anim: {fileID: 0}
   Player: {fileID: 1755951185}
 --- !u!195 &1072543665
@@ -58407,6 +58417,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_moveSpeed: 10
   m_targetDistance: 20
+  m_EnemyFollow: 0
   anim: {fileID: 0}
   Player: {fileID: 1755951185}
 --- !u!195 &1273673679
@@ -63838,6 +63849,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_moveSpeed: 10
   m_targetDistance: 20
+  m_EnemyFollow: 0
   anim: {fileID: 0}
   Player: {fileID: 1755951185}
 --- !u!195 &1396393565
@@ -66150,6 +66162,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_moveSpeed: 10
   m_targetDistance: 20
+  m_EnemyFollow: 0
   anim: {fileID: 0}
   Player: {fileID: 1755951185}
 --- !u!65 &1452484306
@@ -66640,6 +66653,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_moveSpeed: 10
   m_targetDistance: 20
+  m_EnemyFollow: 0
   anim: {fileID: 0}
   Player: {fileID: 1755951185}
 --- !u!65 &1466100432
@@ -67114,6 +67128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_moveSpeed: 10
   m_targetDistance: 20
+  m_EnemyFollow: 0
   anim: {fileID: 0}
   Player: {fileID: 1755951185}
 --- !u!195 &1472347007
@@ -72394,6 +72409,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_moveSpeed: 10
   m_targetDistance: 20
+  m_EnemyFollow: 0
   anim: {fileID: 0}
   Player: {fileID: 1755951185}
 --- !u!195 &1565833013
@@ -73932,6 +73948,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_moveSpeed: 10
   m_targetDistance: 20
+  m_EnemyFollow: 0
   anim: {fileID: 0}
   Player: {fileID: 1755951185}
 --- !u!135 &1604455104
@@ -74031,6 +74048,7 @@ MonoBehaviour:
   animator: {fileID: 1604455105}
   weaponHitBoxScript: {fileID: 1604455110}
   hitBox: {fileID: 1529660048}
+  enemyMovement: {fileID: 1604455103}
 --- !u!1 &1604792075 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 147672, guid: 77ad9661321c6e84280c8fbe32492c06, type: 2}
@@ -74909,6 +74927,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_moveSpeed: 10
   m_targetDistance: 20
+  m_EnemyFollow: 0
   anim: {fileID: 0}
   Player: {fileID: 1755951185}
 --- !u!195 &1616483237
@@ -80499,6 +80518,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_moveSpeed: 10
   m_targetDistance: 20
+  m_EnemyFollow: 0
   anim: {fileID: 0}
   Player: {fileID: 1755951185}
 --- !u!195 &1742125163
@@ -86580,6 +86600,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_moveSpeed: 10
   m_targetDistance: 20
+  m_EnemyFollow: 0
   anim: {fileID: 0}
   Player: {fileID: 1755951185}
 --- !u!195 &1865555054
@@ -87040,6 +87061,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_moveSpeed: 10
   m_targetDistance: 20
+  m_EnemyFollow: 0
   anim: {fileID: 0}
   Player: {fileID: 1755951185}
 --- !u!195 &1874161869
@@ -94269,6 +94291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_moveSpeed: 10
   m_targetDistance: 20
+  m_EnemyFollow: 0
   anim: {fileID: 0}
   Player: {fileID: 1755951185}
 --- !u!65 &2048793025
@@ -94999,6 +95022,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_moveSpeed: 10
   m_targetDistance: 20
+  m_EnemyFollow: 0
   anim: {fileID: 0}
   Player: {fileID: 1755951185}
 --- !u!65 &2063392137
@@ -96806,6 +96830,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_moveSpeed: 10
   m_targetDistance: 20
+  m_EnemyFollow: 0
   anim: {fileID: 0}
   Player: {fileID: 1755951185}
 --- !u!195 &2093400682

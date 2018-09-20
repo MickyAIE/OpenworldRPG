@@ -9,6 +9,8 @@ public class Combat : MonoBehaviour {
     public AnimationEvent animationEvent;
     public BoxCollider hitBox;
 
+    public EnemyMovement enemyMovement;
+
     // Use this for initialization
     void Start () {
 
@@ -23,7 +25,10 @@ public class Combat : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        Attack();
+        if (enemyMovement.m_EnemyFollow == true)
+        {
+            Attack();
+        }
 
     }
 

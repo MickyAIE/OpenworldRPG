@@ -16,7 +16,7 @@ public class EnemyMovement : MonoBehaviour {
     public float m_targetDistance = 20f;
     GameObject Enemy;
 
-    private bool m_EnemyFollow;
+    public bool m_EnemyFollow;
 
     public Animator anim;
 
