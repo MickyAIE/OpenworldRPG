@@ -13,7 +13,6 @@ public class testNpcDialogue : MonoBehaviour {
     public GameObject GUI;
     public bool interacted;
     private bool isCol;
-    public GameObject Enemies;
 
 
 
@@ -44,8 +43,7 @@ public class testNpcDialogue : MonoBehaviour {
             GUI.SetActive(false);
             GameObject.FindGameObjectWithTag("QuestTracker").GetComponent<QuestMarkerTracker>().ActiveQuest += 1;
             DialogueManager.SetActive(true);
-            Enemies.SetActive(false);
-
+            
         }
     }
 

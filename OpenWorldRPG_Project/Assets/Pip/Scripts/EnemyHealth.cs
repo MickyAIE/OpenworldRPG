@@ -10,6 +10,7 @@ public class EnemyHealth : MonoBehaviour
     [Header("Health Attributes")]
     public int m_health = 1;                 // set this value in the inspector
     public int m_currenthealth;              // Current hp
+    public float m_healthbar;
 
 
     [Header("Death Attribute")]
@@ -21,7 +22,7 @@ public class EnemyHealth : MonoBehaviour
 
 
     [Header("Other things")]
-    public Animator m_anim;                  // Animator
+    public Animator m_anim;                         // Animator
     AudioSource m_enemysounds;               // Sound of enemy when hit
     AudioSource m_soundenemy;                // Sound of enemy when death
     CapsuleCollider m_capsule;               // Ref to capsule collider
@@ -32,6 +33,13 @@ public class EnemyHealth : MonoBehaviour
     bool m_falling;                          // Play a animation for the enemy to disappear
     bool m_dead;                             // You know, just to make sure they are dead
 
+    
+
+
+    private void Start()
+    {
+        m_healthbar = Screen.width / 8;
+    }
 
     void Awake()
     {
@@ -83,6 +91,14 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
+    private void OnGUI()
+    {
+        Vector2 m_targetpostition;
+        m_targetpostition = Camera.main.WorldToScreenPoint (transform.position);
+
+        GUI.Box(new Rect(700, 10, m_healthbar, 20), m_currenthealth + "/" + m_health);
+    }
+
 
     public void m_healthbarcurrent(int make)
     {
@@ -96,6 +112,8 @@ public class EnemyHealth : MonoBehaviour
 
         if (m_health < 1)
             m_health = 1;
+
+        m_healthbar = (Screen.width / 8) * (m_currenthealth / (float)m_health);
     }
 
     void Death()
@@ -117,7 +135,7 @@ public class EnemyHealth : MonoBehaviour
             m_soundenemy.Play();
             
         }
-        Experience.experience += m_enemyexpgiven;
+        //Experience.experience += m_enemyexpgiven;
 
         timer += 1f;
         Destroy(this.gameObject, 2f);

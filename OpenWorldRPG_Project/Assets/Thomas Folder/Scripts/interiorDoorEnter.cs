@@ -29,12 +29,11 @@ public class interiorDoorEnter : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (EnterPress == true && Input.GetKeyDown(KeyCode.F) && EnterAllow == true && isCol == true)
+		if (EnterPress == true && Input.GetKeyDown(KeyCode.F) && EnterAllow == true)
         {
             print("f");
             Player.transform.position = Exit.transform.position;
             controller.canEnter = false;
-            
             if (OneTimeOpen)
             {
                 EnterAllow = false;
