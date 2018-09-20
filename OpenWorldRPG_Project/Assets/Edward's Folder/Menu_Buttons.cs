@@ -18,9 +18,6 @@ public class Menu_Buttons : MonoBehaviour {
 
         Button pbtn = Play.GetComponent<Button>();
         pbtn.onClick.AddListener(StartGame);
-
-        Button sbtn = Settings.GetComponent<Button>();
-        sbtn.onClick.AddListener(QuitProgram);
     }
 
     // Update is called once per frame
@@ -37,10 +34,5 @@ public class Menu_Buttons : MonoBehaviour {
     {
 
         SceneManager.LoadScene("Demo_Scene");
-    }
-
-    void OpenSettings()
-    {
-
     }
 }
