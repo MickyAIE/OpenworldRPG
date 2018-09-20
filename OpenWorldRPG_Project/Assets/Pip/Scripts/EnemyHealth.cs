@@ -27,7 +27,8 @@ public class EnemyHealth : MonoBehaviour
     AudioSource m_soundenemy;                // Sound of enemy when death
     CapsuleCollider m_capsule;               // Ref to capsule collider
     ParticleSystem m_particle;               // Ref to particle system
-    public GameObject move;                  // Movement Script
+    public GameObject move;                  // Movement Script (Changed to Enemy)
+    public float timer = 0f;                 // Timer for death fall
 
     bool m_falling;                          // Play a animation for the enemy to disappear
     bool m_dead;                             // You know, just to make sure they are dead
@@ -47,7 +48,8 @@ public class EnemyHealth : MonoBehaviour
         m_soundenemy = GetComponentInParent<AudioSource>();
         m_particle = GetComponentInChildren<ParticleSystem>();
         m_capsule = GetComponent<CapsuleCollider>();
-        
+
+        timer = 0f;
 
         m_currenthealth = m_health;
     }
@@ -55,14 +57,19 @@ public class EnemyHealth : MonoBehaviour
 
     void Update()
     {
+        //timer += 1f;
         if (m_falling)
         {
             transform.Translate(-Vector3.up * m_fallspeed * Time.deltaTime);
         }
         m_healthbarcurrent(0);
-
+        if (timer > 4f)
+        {
+            gameObject.SetActive(false);
+        }
         if (m_currenthealth <= 1.1 && !m_dead)
         {
+            
             Death();
         }
     }
@@ -79,6 +86,7 @@ public class EnemyHealth : MonoBehaviour
 
         if (m_currenthealth <= 0)
         {
+            timer += 1f;
             Death();
         }
     }
@@ -114,16 +122,26 @@ public class EnemyHealth : MonoBehaviour
         m_capsule.isTrigger = true;
         m_anim.SetTrigger("IsDead");
 
+        move.gameObject.transform.Translate(0, -Time.deltaTime / 12, 0, Space.World);
+        //move.gameObject.GetComponent<NavMeshAgent>().enabled = false;
+
+        
+
         Debug.Log("I died!");
         if (m_soundenemy != null)
         {
+            timer += 1f;
             m_soundenemy.clip = m_deathclip;
             m_soundenemy.Play();
+            
         }
         //Experience.experience += m_enemyexpgiven;
 
+        timer += 1f;
         Destroy(this.gameObject, 2f);
         Destroy(move, 2f);
+
+       
     }
 
     public void m_actualfalling()
@@ -139,6 +157,9 @@ public class EnemyHealth : MonoBehaviour
         Debug.Log("Skele got hit!");
 
         m_health -= 15;
-
+        if(m_health <= 0)
+        {
+            timer += 1f;
+        }
     }
 }
