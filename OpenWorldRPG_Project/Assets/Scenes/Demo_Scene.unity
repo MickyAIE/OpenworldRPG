@@ -17658,6 +17658,10 @@ MonoBehaviour:
   DialogueOb: {fileID: 900546703}
   GUI: {fileID: 1012821409}
   DialogueManager: {fileID: 385475081}
+<<<<<<< HEAD
+=======
+  Enemies: {fileID: 669375579}
+>>>>>>> parent of c18f0c1... Light
 --- !u!1 &385969676
 GameObject:
   m_ObjectHideFlags: 0
@@ -23400,6 +23404,10 @@ MonoBehaviour:
   Interact: {fileID: 1230822459}
   GUI: {fileID: 1012821409}
   interacted: 0
+<<<<<<< HEAD
+=======
+  Enemies: {fileID: 669375579}
+>>>>>>> parent of c18f0c1... Light
 --- !u!135 &503305149
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -35864,6 +35872,10 @@ MonoBehaviour:
   Interact: {fileID: 1230822459}
   GUI: {fileID: 1012821409}
   interacted: 0
+<<<<<<< HEAD
+=======
+  Enemies: {fileID: 669375579}
+>>>>>>> parent of c18f0c1... Light
 --- !u!135 &732595465
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -40493,6 +40505,7 @@ Prefab:
     - {fileID: 114437134910253538, guid: fa57decc21818d440a79970010f7b890, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: fa57decc21818d440a79970010f7b890, type: 2}
   m_IsPrefabParent: 0
+<<<<<<< HEAD
 --- !u!1 &837020220 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100008, guid: 9c1b707b80c272f42b8f152b1ca7b827, type: 3}
@@ -40646,6 +40659,8 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
+=======
+>>>>>>> parent of c18f0c1... Light
 --- !u!1 &838563355
 GameObject:
   m_ObjectHideFlags: 0
@@ -58320,6 +58335,10 @@ MonoBehaviour:
   DialogueOb: {fileID: 264040206}
   GUI: {fileID: 1012821409}
   DialogueManager: {fileID: 1192621291}
+<<<<<<< HEAD
+=======
+  Enemies: {fileID: 669375579}
+>>>>>>> parent of c18f0c1... Light
 --- !u!1 &1192659591 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 147672, guid: 77ad9661321c6e84280c8fbe32492c06, type: 2}
@@ -85976,6 +85995,19 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+=======
+    - target: {fileID: 114172215394133488, guid: bb77d83cd59274a4aac5e3c4e04e678b,
+        type: 2}
+      propertyPath: Enemies
+      value: 
+      objectReference: {fileID: 669375579}
+    - target: {fileID: 114474699397267892, guid: bb77d83cd59274a4aac5e3c4e04e678b,
+        type: 2}
+      propertyPath: Enemies
+      value: 
+      objectReference: {fileID: 669375579}
+>>>>>>> parent of c18f0c1... Light
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bb77d83cd59274a4aac5e3c4e04e678b, type: 2}
   m_IsPrefabParent: 0
