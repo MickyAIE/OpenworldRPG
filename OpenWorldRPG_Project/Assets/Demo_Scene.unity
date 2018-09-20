@@ -49532,6 +49532,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_moveSpeed: 10
   m_targetDistance: 20
+  anim: {fileID: 0}
   Player: {fileID: 1755951185}
 --- !u!135 &1604455104
 SphereCollider:
