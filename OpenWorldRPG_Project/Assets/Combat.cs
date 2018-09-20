@@ -29,10 +29,6 @@ public class Combat : MonoBehaviour {
 
     void Attack()
     {
-        hitBox.enabled = true;
-
-        weaponHitBoxScript.enabled = true;
-
         animator.SetBool("IsIdle", false);
         animator.SetBool("IsWalk", false);
         animator.SetBool("IsAttack", true);
@@ -40,7 +36,7 @@ public class Combat : MonoBehaviour {
 
     public void StopDamage(string StopDamage)
     {
-        animator.SetBool("meleeAttack", false);
+        animator.SetBool("IsAttack", false);
 
         weaponHitBoxScript.enabled = false;
 
@@ -50,6 +46,14 @@ public class Combat : MonoBehaviour {
         Debug.Log("HitBox disabled");
     }
 
+
+    public void StartDamage(string StartDamage)
+    {
+        hitBox.enabled = true;
+
+        weaponHitBoxScript.enabled = true;
+
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag.Equals("Player"))
