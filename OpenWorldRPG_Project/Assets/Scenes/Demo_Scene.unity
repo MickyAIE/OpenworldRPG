@@ -16535,6 +16535,7 @@ MonoBehaviour:
   DialogueOb: {fileID: 900546703}
   GUI: {fileID: 1012821409}
   DialogueManager: {fileID: 385475081}
+  Enemies: {fileID: 669375579}
 --- !u!1 &385969676
 GameObject:
   m_ObjectHideFlags: 0
@@ -22069,6 +22070,7 @@ MonoBehaviour:
   Interact: {fileID: 1230822459}
   GUI: {fileID: 1012821409}
   interacted: 0
+  Enemies: {fileID: 669375579}
 --- !u!135 &503305149
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -33778,6 +33780,7 @@ MonoBehaviour:
   Interact: {fileID: 1230822459}
   GUI: {fileID: 1012821409}
   interacted: 0
+  Enemies: {fileID: 669375579}
 --- !u!135 &732595465
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -39316,7 +39319,7 @@ MonoBehaviour:
   EnterText: {fileID: 1230822459}
   QuestDoor: 0
   QM: {fileID: 0}
-  OneTimeOpen: 0
+  OneTimeOpen: 1
   EnterAllow: 0
 --- !u!65 &863257000
 BoxCollider:
@@ -50890,7 +50893,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 483780, guid: aa03ca6a3953ccc4397f5f35d2aa0a6d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 45.000816
+      value: 60.07
       objectReference: {fileID: 0}
     - target: {fileID: 483780, guid: aa03ca6a3953ccc4397f5f35d2aa0a6d, type: 2}
       propertyPath: m_LocalPosition.y
@@ -50898,7 +50901,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 483780, guid: aa03ca6a3953ccc4397f5f35d2aa0a6d, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 83.50794
+      value: 110.77
       objectReference: {fileID: 0}
     - target: {fileID: 483780, guid: aa03ca6a3953ccc4397f5f35d2aa0a6d, type: 2}
       propertyPath: m_LocalRotation.x
@@ -50906,7 +50909,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 483780, guid: aa03ca6a3953ccc4397f5f35d2aa0a6d, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0.97979695
+      value: -0.46882153
       objectReference: {fileID: 0}
     - target: {fileID: 483780, guid: aa03ca6a3953ccc4397f5f35d2aa0a6d, type: 2}
       propertyPath: m_LocalRotation.z
@@ -50914,7 +50917,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 483780, guid: aa03ca6a3953ccc4397f5f35d2aa0a6d, type: 2}
       propertyPath: m_LocalRotation.w
-      value: -0.19999492
+      value: -0.88329285
       objectReference: {fileID: 0}
     - target: {fileID: 483780, guid: aa03ca6a3953ccc4397f5f35d2aa0a6d, type: 2}
       propertyPath: m_RootOrder
@@ -50922,7 +50925,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 483780, guid: aa03ca6a3953ccc4397f5f35d2aa0a6d, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -203.073
+      value: -304.08398
       objectReference: {fileID: 0}
     - target: {fileID: 9587140, guid: aa03ca6a3953ccc4397f5f35d2aa0a6d, type: 2}
       propertyPath: m_Controller
@@ -52824,7 +52827,7 @@ MonoBehaviour:
   EnterText: {fileID: 1230822459}
   QuestDoor: 0
   QM: {fileID: 0}
-  OneTimeOpen: 0
+  OneTimeOpen: 1
   EnterAllow: 0
 --- !u!65 &1158129927
 BoxCollider:
@@ -54678,6 +54681,7 @@ MonoBehaviour:
   DialogueOb: {fileID: 264040206}
   GUI: {fileID: 1012821409}
   DialogueManager: {fileID: 1192621291}
+  Enemies: {fileID: 669375579}
 --- !u!1 &1192659591 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 147672, guid: 77ad9661321c6e84280c8fbe32492c06, type: 2}
@@ -80411,6 +80415,16 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114172215394133488, guid: bb77d83cd59274a4aac5e3c4e04e678b,
+        type: 2}
+      propertyPath: Enemies
+      value: 
+      objectReference: {fileID: 669375579}
+    - target: {fileID: 114474699397267892, guid: bb77d83cd59274a4aac5e3c4e04e678b,
+        type: 2}
+      propertyPath: Enemies
+      value: 
+      objectReference: {fileID: 669375579}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bb77d83cd59274a4aac5e3c4e04e678b, type: 2}
   m_IsPrefabParent: 0
@@ -98412,7 +98426,7 @@ MonoBehaviour:
   EnterText: {fileID: 1230822459}
   QuestDoor: 0
   QM: {fileID: 0}
-  OneTimeOpen: 0
+  OneTimeOpen: 1
   EnterAllow: 0
 --- !u!65 &2124018381
 BoxCollider:
