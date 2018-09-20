@@ -14054,6 +14054,12 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &325079181 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114320813557098336, guid: 6230b1fb2ef9b944f99d53e2cff1e133,
+    type: 2}
+  m_PrefabInternal: {fileID: 390414767}
+  m_Script: {fileID: 11500000, guid: 08add70c808a3854da4f61c51b8067e2, type: 3}
 --- !u!114 &325079183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32839,6 +32845,7 @@ MonoBehaviour:
   hitBox: {fileID: 466755592}
   hitPoint: {x: 0, y: 0, z: 0}
   damage: 20
+  playerAttack: {fileID: 0}
 --- !u!4 &706239444 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4843374976541930, guid: 5b010c64d85081641a65cd3d42464fe9,
@@ -74034,6 +74041,7 @@ MonoBehaviour:
   hitBox: {fileID: 1529660048}
   hitPoint: {x: 0, y: 0, z: 0}
   damage: 20
+  playerAttack: {fileID: 325079181}
 --- !u!114 &1604455111
 MonoBehaviour:
   m_ObjectHideFlags: 0

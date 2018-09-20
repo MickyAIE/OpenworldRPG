@@ -12,6 +12,7 @@ public class HitBox : MonoBehaviour {
     public int damage = 20;
 
     bool warnMeOnce;
+    public PlayerAttack playerAttack;
 
     void Start ()
     {
@@ -55,6 +56,7 @@ public class HitBox : MonoBehaviour {
                 //Damage(boxes.transform);
 
                 other.gameObject.transform.SendMessage("GetHitSucka");
+               
             }
 
             if (other.gameObject.tag.Equals("Player"))
@@ -64,7 +66,11 @@ public class HitBox : MonoBehaviour {
                 Debug.Log("Do damage to Player");
                 //Damage(boxes.transform);
 
-                other.gameObject.transform.SendMessage("GetHitPlaya");
+                if (playerAttack.blocking == false)
+                {
+                    other.gameObject.transform.SendMessage("GetHitPlaya");
+                }
+                
             }
 
         }

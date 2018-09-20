@@ -144,6 +144,6 @@ public class Health : MonoBehaviour
     {
         Debug.Log("player got hit");
 
-        our_health -= 10;
+        our_health -= 3;
     }
 }
