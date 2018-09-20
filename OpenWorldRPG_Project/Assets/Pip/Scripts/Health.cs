@@ -153,6 +153,6 @@ public class Health : MonoBehaviour
         Debug.Log("player got hit");
 
         our_health -= 3;
-        ourhealthslider.maxValue = our_currenthealth;
+        
     }
 }

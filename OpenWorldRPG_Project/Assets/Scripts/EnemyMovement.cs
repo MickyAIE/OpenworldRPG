@@ -35,6 +35,8 @@ public class EnemyMovement : MonoBehaviour {
         m_Player = GameObject.FindGameObjectWithTag("Player");
         m_Rigidbody = GetComponent<Rigidbody>();
 
+        //anim.SetBool("IsIdle", true);
+
         m_EnemyNav = GetComponent<NavMeshAgent>();
         m_EnemyFollow = false;
 
@@ -45,7 +47,7 @@ public class EnemyMovement : MonoBehaviour {
 	void Update ()
     {
 
-        anim.SetBool("IsIdle", true);
+        
         //m_playerPosition = new Vector3  (Player.transform);
         //Player.transform.position = new Vector3(playerposition);
 
@@ -57,15 +59,16 @@ public class EnemyMovement : MonoBehaviour {
         {
             m_EnemyNav.SetDestination(m_Player.transform.position);
             m_EnemyNav.isStopped = false;
-            anim.SetBool("IsIdle", false);
-            anim.SetBool("IsWalk", true);
+
+            //anim.SetBool("IsIdle", false);
+            //anim.SetBool("IsWalk", true);
         }
         else
         {
             m_EnemyNav.isStopped = true;
             m_moveSpeed = 0;
-            anim.SetBool("IsIdle", true);
-            anim.SetBool("IsWalk", false);
+            //anim.SetBool("IsIdle", true);
+            //anim.SetBool("IsWalk", false);
         }
 
         //m_playerDistance = m_playerPosition - m_enemyPosition;
@@ -90,6 +93,7 @@ public class EnemyMovement : MonoBehaviour {
         if(other.tag.Equals("Player") == true)
         {
             m_EnemyFollow = true;
+            //anim.SetBool("IsWalk", true);
         }
     }
     private void OnTriggerExit(Collider other)

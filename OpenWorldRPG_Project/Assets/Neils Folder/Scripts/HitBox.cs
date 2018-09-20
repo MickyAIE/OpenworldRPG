@@ -59,7 +59,7 @@ public class HitBox : MonoBehaviour {
                
             }
 
-            if (other.gameObject.tag.Equals("Player"))
+            if (other.gameObject.tag.Equals("PlayerDamageReciever"))
             {
                 hitBox.enabled = false;
 

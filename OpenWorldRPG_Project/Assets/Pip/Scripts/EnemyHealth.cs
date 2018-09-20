@@ -58,7 +58,7 @@ public class EnemyHealth : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
-        if (m_currenthealth <= 1.1 && !m_dead)
+        if (m_health <= 1.1 && !m_dead)
 
         {
             
@@ -117,7 +117,7 @@ public class EnemyHealth : MonoBehaviour
             
         }
 
-        Experience.experience += m_enemyexpgiven;
+        //Experience.experience += m_enemyexpgiven;
 
         timer += 1f;
         Destroy(this.gameObject, 2f);
