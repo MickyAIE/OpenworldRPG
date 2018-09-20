@@ -1369,6 +1369,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.4306684, y: 2.8090723, z: 5.118218}
   m_Center: {x: 0.00000005960465, y: 1.4045361, z: 0.0000019073489}
+--- !u!1 &30342218 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 189614, guid: a0cb2c321fdf00a4ba429209e735b448, type: 2}
+  m_PrefabInternal: {fileID: 1277380027}
+--- !u!65 &30342221
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 30342218}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.242218, y: 3.164218, z: 17.11}
+  m_Center: {x: 0, y: -1.49, z: -3.2}
 --- !u!1001 &30692434
 Prefab:
   m_ObjectHideFlags: 0
@@ -9924,7 +9940,7 @@ GameObject:
   - component: {fileID: 198082623}
   m_Layer: 0
   m_Name: Terrain
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -53907,7 +53923,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 483780, guid: aa03ca6a3953ccc4397f5f35d2aa0a6d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 45.000816
+      value: 61.97
       objectReference: {fileID: 0}
     - target: {fileID: 483780, guid: aa03ca6a3953ccc4397f5f35d2aa0a6d, type: 2}
       propertyPath: m_LocalPosition.y
@@ -53915,7 +53931,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 483780, guid: aa03ca6a3953ccc4397f5f35d2aa0a6d, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 83.50794
+      value: 100.88
       objectReference: {fileID: 0}
     - target: {fileID: 483780, guid: aa03ca6a3953ccc4397f5f35d2aa0a6d, type: 2}
       propertyPath: m_LocalRotation.x
@@ -53923,7 +53939,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 483780, guid: aa03ca6a3953ccc4397f5f35d2aa0a6d, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0.97979695
+      value: -0.36863387
       objectReference: {fileID: 0}
     - target: {fileID: 483780, guid: aa03ca6a3953ccc4397f5f35d2aa0a6d, type: 2}
       propertyPath: m_LocalRotation.z
@@ -53931,7 +53947,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 483780, guid: aa03ca6a3953ccc4397f5f35d2aa0a6d, type: 2}
       propertyPath: m_LocalRotation.w
-      value: -0.19999492
+      value: -0.9295747
       objectReference: {fileID: 0}
     - target: {fileID: 483780, guid: aa03ca6a3953ccc4397f5f35d2aa0a6d, type: 2}
       propertyPath: m_RootOrder
@@ -53939,7 +53955,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 483780, guid: aa03ca6a3953ccc4397f5f35d2aa0a6d, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -203.073
+      value: -316.737
       objectReference: {fileID: 0}
     - target: {fileID: 9587140, guid: aa03ca6a3953ccc4397f5f35d2aa0a6d, type: 2}
       propertyPath: m_Controller
@@ -57962,7 +57978,7 @@ MonoBehaviour:
   - They've taken over our town...
   - We need to stop them from coming back
   - Go to the top of the mountain...
-  - Theres a [ENEMYTYPE] up there
+  - Theres a Skeleton up there
   - Defeat it and save us!
   typingSpeed: 0.02
   nextb: {fileID: 861656603}
@@ -61362,7 +61378,7 @@ GameObject:
   - component: {fileID: 1259295502}
   m_Layer: 0
   m_Name: Terrain (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -74891,7 +74907,7 @@ GameObject:
   - component: {fileID: 1554251169}
   m_Layer: 0
   m_Name: Terrain (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
